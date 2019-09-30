@@ -1,0 +1,144 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="module" name="module" value="personnels">
+<input type="hidden" id="action" name="action" value="save_infos">
+<input type="hidden" id="id" name="id" value="{ID}">
+<input type="hidden" id="derniere_connexion" name="derniere_connexion" value="{DERNIERE_CONNEXION}">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input tabindex=30 type="Submit" id="Enregistrer" name="Enrigistrer" value="{BTN_ENREGISTRER}">&nbsp;
+    <input tabindex=31 type="Button" id="EnregistrerFermer" name="EnrigistrerFermer" value="{BTN_ENREGISTRER_FERMER}">
+    <input tabindex=32 type="Button" id="EnregistrerNouveau" name="EnregistrerNouveau" value="{BTN_ENREGISTRER_CREER_PERSONNEL}">
+    <input tabindex=33 type="Button" id="Annuler" name="Annuler" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_INFOS_GENERALES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_CIVILITE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{CIVILITE}</td>
+  <td class="droite" rowspan=4 width=15% valign=top><label class="label_class">{LBL_ADRESSE} :</label></td>
+  <td class="gauche" rowspan=4 width=35% valign=top>{ADRESSE}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_NOM} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{NOM}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_PRENOM} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{PRENOM}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_NAISSANCE} :</label></td>
+  <td class="gauche" width=35%>{DATE_NAISSANCE}</td>
+</tr>
+</table>
+
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_VIE_ETABL}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_TYPE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{TYPE}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_ENTREE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{DATE_ENTREE}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%>&nbsp;</td>
+  <td class="gauche" width=35%>&nbsp;</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_SORTIE} :</label></td>
+  <td class="gauche" width=35%>{DATE_SORTIE}</td>
+</tr>
+</table>
+
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_INFOS_EN}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_ENTRE_EN} :</label></td>
+  <td class="gauche" width=35%>{DATE_ENTREE_EN}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_ECHELON} :</label></td>
+  <td class="gauche" width=35%>{ECHELON}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_DERNIERE_INSPECTION} :</label></td>
+  <td class="gauche" width=35%>{DATE_DERNIERE_INSPECTION}</td>
+  <td class="droite" width=15%>&nbsp;</td>
+  <td class="gauche" width=35%>&nbsp;</td>
+</tr>
+</table>
+
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_COORDONNEES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_TELEPHONE} :</label></td>
+  <td class="gauche" width=35%>{TEL}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_PORTABLE} :</label></td>
+  <td class="gauche" width=35%>{PORTABLE}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_TELEPHONE2} :</label></td>
+  <td class="gauche" width=35%>{TEL2}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_EMAIL} :</label></td>
+  <td class="gauche" width=35%>{EMAIL}</td>
+</tr>
+<tr>
+  <td class="droite" style="width:50%" colspan=2>&nbsp;</td>
+  <td class="droite" style="width:50%" colspan=2>{RECEVOIR_EMAIL} {LBL_ETRE_INFORME_PAR_EMAIL}</td>
+</tr>
+</table>
+
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_CONJOINT}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_CIVILITE} :</label></td>
+  <td class="gauche" width=35%>{CIVILITE_CONJOINT}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_TELEPHONE} :</label></td>
+  <td class="gauche" width=35%>{TEL_CONJOINT}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_NOM} :</label></td>
+  <td class="gauche" width=35%>{NOM_CONJOINT}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_TELEPHONE2} :</label></td>
+  <td class="gauche" width=35%>{TEL2_CONJOINT}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_PRENOM} :</label></td>
+  <td class="gauche" width=35%>{PRENOM_CONJOINT}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_PORTABLE} :</label></td>
+  <td class="gauche" width=35%>{PORT_CONJOINT}</td>
+</tr>
+</table>
+
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_ACCES_GESTECOLE}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_IDENTIFIANT} :</label></td>
+  <td class="gauche" width=35%>{IDENTIFIANT}<div id="verif_id" style="margin-top:5px;"></div></td>
+  <td class="droite" width=15%><label class="label_class">{LBL_MDP} :</label></td>
+  <td class="gauche" width=35%>{PASSE}</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_INFOS_COMPL}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview2">
+<tr>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_INFOS_COMPL2} :</label></td>
+  <td class="gauche" width=85%>{INFOS_COMPL}</td>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input tabindex=26 type="Button" id="Enregistrer2" name="Enrigistrer2" value="{BTN_ENREGISTRER}">&nbsp;
+    <input tabindex=27 type="Button" id="EnregistrerFermer2" name="EnrigistrerFermer2" value="{BTN_ENREGISTRER_FERMER}">
+    <input tabindex=28 type="Button" id="EnregistrerNouveau2" name="EnregistrerNouveau2" value="{BTN_ENREGISTRER_CREER_PERSONNEL}">
+    <input tabindex=29 type="Button" id="Annuler2" name="Annuler2" value="{BTN_ANNULER}">
+  </td>
+  <td class="gauche" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

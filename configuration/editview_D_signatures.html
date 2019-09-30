@@ -1,0 +1,47 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="module" name="module" value="configuration">
+<input type="hidden" id="action" name="action" value="save_etab">
+<input type="hidden" id="id" name="id" value="signatures">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input type="Submit" id="Enregistrer" name="Enrigistrer" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="EnregistrerFermer" name="EnrigistrerFermer" value="{BTN_ENREGISTRER_FERMER}">
+    <input type="Button" id="Annuler" name="Annuler" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}&nbsp;&nbsp;&nbsp;<input type="Button" id="aide_fenetre" name="aide_fenetre" value="{BTN_AIDE}"></td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_CONFIG_ABSENCES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=50%><label class="label_class" style="width:400px">{LBL_CONFIG_SIGNATURE_ABSENCES} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=50%>{SIGNATURE_REGISTRE}</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_CONFIG_LIVRETS}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview2">
+<tr>
+  <td class="droite" width=50%><label class="label_class" style="width:400px">{LBL_CONFIG_APPRECIATION_LIVRETS} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=50%>{APPRECIATION_LIVRETS}</td>
+</tr>
+<tr>
+  <td class="droite" width=50%><label class="label_class" style="width:400px">{LBL_CONFIG_SIGNATURE_LIVRETS} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=50%>{SIGNATURE_LIVRETS}</td>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input type="Button" id="Enregistrer2" name="Enrigistrer2" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="EnregistrerFermer2" name="EnrigistrerFermer2" value="{BTN_ENREGISTRER_FERMER}">
+    <input type="Button" id="Annuler2" name="Annuler2" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

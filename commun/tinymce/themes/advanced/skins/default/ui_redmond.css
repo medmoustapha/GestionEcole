@@ -1,0 +1,26 @@
+.defaultSkinRedmond td.mceToolbar, .defaultSkinRedmond td.mceStatusbar, .defaultSkinRedmond .mceMenuItemTitle a {background:#dfeffc}
+.defaultSkinRedmond .mceListBox .mceText {background:#FFF}
+
+.defaultSkinRedmond .mceExternalToolbar, 
+.defaultSkinRedmond .mceListBox .mceText, 
+.defaultSkinRedmond .mceListBox .mceOpen, 
+.defaultSkinRedmond div.mceMenu, 
+.defaultSkinRedmond table.mceLayout, 
+.defaultSkinRedmond .mceMenuItemTitle a, 
+.defaultSkinRedmond table.mceLayout tr.mceFirst td, 
+.defaultSkinRedmond table.mceLayout, 
+.defaultSkinRedmond .mceMenuItemTitle a, 
+.defaultSkinRedmond table.mceLayout tr.mceLast td, 
+.defaultSkinRedmond .mceIframeContainer, 
+.defaultSkinRedmond .mceButton, 
+.defaultSkinRedmond .mceSplitButton .mceAction, 
+.defaultSkinRedmond .mceSplitButton .mceOpen, 
+.defaultSkinRedmond .mceSplitButton a.mceAction, 
+.defaultSkinRedmond .mceSplitButton a.mceOpen, 
+.defaultSkinRedmond .mceColorSplitMenu .mceMoreColors,
+.defaultSkinRedmond .mceSplitButtonEnabled .mceAction, 
+.defaultSkinRedmond .mceSplitButtonHover .mceAction, 
+.defaultSkinRedmond .mceSplitButtonSelected .mceAction
+{
+	border-color: #4297d7;
+}

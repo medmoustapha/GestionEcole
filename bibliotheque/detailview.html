@@ -1,0 +1,88 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="id" name="id" value="{ID}">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche" width=100%>
+    <input type="Button" id="Modifier" name="Modifier" value="{BTN_MODIFIER}">&nbsp;
+    <input type="Button" id="Saisir_Emprunt" name="Saisir_Emprunt" value="{BTN_SAISIR_EMPRUNT}">&nbsp;
+    <input type="Button" id="Reserver_Livre" name="Reserver_Livre" value="{BTN_RESERVER}">&nbsp;
+    <input type="Button" id="Imprimer_Detail" name="Imprimer_Detail" value="{BTN_IMPRIMER}">&nbsp;
+    <input type="Button" id="Retour" name="Retour" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" nowrap>
+	<div class="ui-widget ui-state-default ui-corner-all ui-div-listview textcentre">{LBL_ALLER_A} : {LISTE_BIBLIOTHEQUE}</div>
+  </td>
+</tr>
+</table>
+
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_INFOS_LIVRE}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview" style="width:100%">
+<tr>
+  <td class="gauche" style="width:20%" rowspan=10 valign=top>{COUVERTURE}</td>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_TITRE} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{TITRE}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_BIBLIOTHEQUE} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{BIBLIOTHEQUE}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_REFERENCE} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{REFERENCE}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_CATEGORIE} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{ID_CAT}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_AUTEUR} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{AUTEUR}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_EDITEUR} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{EDITEUR}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_COLLECTION} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{COLLECTION}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_ETAT} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{ETAT}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%"><label class="label_class" style="width:100px">{LBL_ISBN} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{ISBN}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:5%;vertical-align:top"><label class="label_class" style="width:100px">{LBL_RESUME} : </label></td>
+  <td class="gauche" style="width:75%"><label class="label_detail">{RESUME}</label></td>
+</tr>
+</table>
+
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_EMPRUNTS}</div>
+<div class="textgauche">{LISTE_EMPRUNT}</div>
+
+<br><br>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_RESERVATION_TITRE}</div>
+<div class="textgauche">{LISTE_RESERVATIONS}</div>
+
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche" width=100%>
+    <input type="Button" id="Modifier2" name="Modifier2" value="{BTN_MODIFIER}">&nbsp;
+    <input type="Button" id="Saisir_Emprunt2" name="Saisir_Emprunt2" value="{BTN_SAISIR_EMPRUNT}">&nbsp;
+    <input type="Button" id="Reserver_Livre2" name="Reserver_Livre2" value="{BTN_RESERVER}">&nbsp;
+    <input type="Button" id="Imprimer_Detail2" name="Imprimer_Detail2" value="{BTN_IMPRIMER}">&nbsp;
+    <input type="Button" id="Retour2" name="Retour2" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" nowrap>
+	<div class="ui-widget ui-state-default ui-corner-all ui-div-listview textcentre">{LBL_ALLER_A} : {LISTE_BIBLIOTHEQUE2}</div>
+  </td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

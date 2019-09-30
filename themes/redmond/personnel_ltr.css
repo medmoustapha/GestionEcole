@@ -1,0 +1,73 @@
+/* */
+.ui-widget { padding:2px; }
+.espacement_bas { margin-bottom:3px; }
+.espacement_haut { margin-top:3px; }
+.entete { font-family: Arial,sans-serif; font-size: 28px !important; color:#FFFFFF; padding:3px; }
+.theme { font-family: Arial,sans-serif; font-size: 12px !important; color:#FFFFFF; padding:3px; text-align:center; }
+
+.titre_page
+{
+  margin-top:10px;
+  font-size:24px;
+  color:#2e6e9e;
+  font-weight:bold;
+  font-family:Arial, sans serif;
+  font-variant:small-caps;
+  margin-bottom:10px;
+}
+
+.sous_titre_page
+{
+  margin-top:10px;
+  font-size:18px;
+  color:#2e6e9e;
+  font-weight:bold;
+  font-family:Arial, sans serif;
+  font-variant:small-caps;
+}
+
+table.heures thead tr th
+{
+  padding:3px;
+}
+
+table.heures tbody tr td.heure,
+table.heures tbody tr td.heure_non_marquee
+{
+  border-left:1px solid #c5dbec;
+  border-right:1px solid #c5dbec;
+  background-color:#FFFFFF;
+  margin:0px;
+  padding:3px;
+}
+
+table.heures tbody tr td.heure
+{
+  border-top:1px solid #c5dbec;
+}
+
+table.heures tbody tr td.contenu
+{
+  border-right:1px solid #c5dbec;
+  border-top:1px solid #c5dbec;
+  background-color:#FFFFFF;
+  margin:0px;
+  padding:5px;
+}
+
+table.heures tbody tr td.heure_fin
+{
+  border-top:1px solid #c5dbec;
+  margin:0px;
+  padding:3px;
+}
+
+table.heures tbody tr td.contenu_fin
+{
+  border-right:0px;
+  border-top:1px solid #c5dbec;
+  margin:0px;
+  padding:5px;
+}
+
+.sous_titre_cj { color: #e17009; text-decoration: none; font-weight:bold; }

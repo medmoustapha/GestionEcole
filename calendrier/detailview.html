@@ -1,0 +1,65 @@
+<!-- BEGIN formulaire -->
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="id" name="id" value="{ID}">
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche" width=100%>&nbsp;</td>
+  <td class="droite" nowrap>
+		<div class="ui-widget ui-state-default ui-corner-all ui-div-listview textcentre">{LBL_ALLER_A} : {LISTE_REUNIONS}</div>
+  </td>
+</tr>
+<tr>
+  <td class="gauche" width=100% colspan=2>
+    <input type="Button" id="Modifier" name="Modifier" value="{BTN_MODIFIER}">&nbsp;
+    <input type="Button" id="Supprimer" name="Supprimer" value="{BTN_SUPPRIMER}">&nbsp;
+    <input type="Button" id="Imprimer_Detail" name="Imprimer_Detail" value="{BTN_IMPRIMER}">&nbsp;
+    <input type="Button" id="Retour" name="Retour" value="{BTN_ANNULER}">
+  </td>
+</tr>
+</table>
+
+<table cellspacing=0 cellpadding=0 class="tableau_editview2">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_RESUME} :</label></td>
+  <td class="gauche" width=85% colspan=3><label class="label_detail">{RESUME}</label></td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{DATE}</label></td>
+  <td class="droite" width=15%><label class="label_class">{LBL_HEURE_DEBUT} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{HEURE_DEBUT}</label></td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_TYPE} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{TYPE}</label></td>
+  <td class="droite" width=15%><label class="label_class">{LBL_HEURE_FIN} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{HEURE_FIN}</label></td>
+</tr>
+<tr>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_PERSONNES_CONCERNEES} :</label></td>
+  <td class="gauche" width=85% colspan=3><label class="label_detail">{ID_UTIL}</label></td>
+</tr>
+<tr>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_DETAILS} :</label></td>
+  <td class="gauche" width=85% colspan=3><label class="label_rien">{DETAIL}</label></td>
+</tr>
+</table>
+
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche" width=100% colspan=2>
+    <input type="Button" id="Modifier2" name="Modifier2" value="{BTN_MODIFIER}">&nbsp;
+    <input type="Button" id="Supprimer2" name="Supprimer2" value="{BTN_SUPPRIMER}">&nbsp;
+    <input type="Button" id="Imprimer_Detail2" name="Imprimer_Detail2" value="{BTN_IMPRIMER}">&nbsp;
+    <input type="Button" id="Retour2" name="Retour2" value="{BTN_ANNULER}">
+  </td>
+</tr>
+<tr>
+  <td class="gauche" width=100%>&nbsp;</td>
+  <td class="droite" nowrap>
+		<div class="ui-widget ui-state-default ui-corner-all ui-div-listview textcentre">{LBL_ALLER_A} : {LISTE_REUNIONS2}</div>
+  </td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

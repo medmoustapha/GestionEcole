@@ -1,0 +1,80 @@
+<div class="titre_page">{LBL_LISTE_CLASSES}</div>
+<div class="aide"><button id="aide">{BTN_AIDE}</button></div>
+
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+    {BUTTON}
+  </td>
+  <td class="textdroite" valign=middle nowrap>
+    <div class="ui-widget ui-state-default ui-corner-all marge10_gauche marge10_droite textcentre" style="padding:4px;">{LBL_ANNEE_SCOLAIRE_COURS} : {ANNEE_S}</div>
+  </td>
+</tr>
+</table>
+<div class="ui-widget" id="affiche_recherche_classes" style="visibility:hidden;display:none;"><div class="contour_recherche ui-corner-all">
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+		<div class="titre_recherche">{LBL_RECHERCHE_CIBLEE}</div>
+	</td>
+</tr>
+<tr>
+  <td class="textgauche" width=100%>
+			<div class="recherche"><label class="label_recherche">{LST_CLASSE} :</label><label class="label_recherche_champ">{RECHERCHE_NOM_CLASSE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DECLOISONNEMENTS} :</label><label class="label_recherche_champ">{RECHERCHE_DECLOISONNEMENT}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_NB_ELEVES} :</label><label class="label_recherche_champ">{RECHERCHE_NB_ELEVE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_ATSEMS} :</label><label class="label_recherche_champ">{RECHERCHE_ATSEM}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_NIVEAUX} :</label><label class="label_recherche_champ">{RECHERCHE_NIVEAUX}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_INTERVENANTS_EXTERIEURS} :</label><label class="label_recherche_champ">{RECHERCHE_INTERVENANTS_EXTERIEURS}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_TITULAIRE} :</label><label class="label_recherche_champ">{RECHERCHE_TITULAIRE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_AUTRES_INTERVENANTS} :</label><label class="label_recherche_champ">{RECHERCHE_AUTRES_INTERVENANTS}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DECHARGES} :</label><label class="label_recherche_champ">{RECHERCHE_DECHARGE}</label></div>
+	</td>
+</tr>
+<tr>
+  <td class="textdroite" width=100%>
+		<button tabindex=111 id="vider_classes" name="vider_classes">{BTN_VIDER}</button>&nbsp;<button tabindex=110 id="rechercher_classes" name="rechercher_classes">{BTN_RECHERCHER}</button>
+	</td>
+</tr>
+</table>
+</div></div>
+<div id="listview">
+<!-- BEGIN liste_entete -->
+<table id="listing_donnees_classes" class="display" cellpadding=0 cellspacing=0 style="width:100%">
+<thead>
+<tr>
+<th style="width:5%" class="centre">{LST_NUMERO_COLONNE}</th>
+<th style="width:26%" class="centre">{LST_CLASSE}</th>
+<th style="width:12%" class="centre">{LST_NB_ELEVES}</th>
+<th style="width:12%" class="centre">{LST_NIVEAUX}</th>
+<th style="width:24%" class="centre">{LST_TITULAIRE}</th>
+<th style="width:24%" class="centre">{LST_DECHARGES}</th>
+<th style="width:24%" class="centre">{LST_DECLOISONNEMENTS}</th>
+<th style="width:24%" class="centre">{LST_ATSEMS}</th>
+<th style="width:24%" class="centre">{LST_INTERVENANTS_EXTERIEURS}</th>
+<th style="width:24%" class="centre">{LST_AUTRES_INTERVENANTS}</th>
+<th style="width:2%" class="centre">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<!-- END liste_entete -->
+
+<!-- BEGIN liste -->
+<tr>
+<td style="width:5%" class="centre">{NUMERO}</td>
+<td style="width:26%" class="gauche"><a title="{SPAN_VOIR_FICHE_CLASSE}" href="#null" onClick="Classes_L_DetailView_Util('{ID}');">{NOM_CLASSE}</a></td>
+<td style="width:12%" class="centre">{NB_ELEVE}</td>
+<td style="width:12%" class="centre">{NIVEAUX}</td>
+<td style="width:24%" class="centre">{TITULAIRE}</a></td>
+<td style="width:24%" class="centre">{DECHARGE}</td>
+<td style="width:24%" class="centre">{DECLOISONNEMENT}</td>
+<td style="width:24%" class="centre">{ATSEM}</td>
+<td style="width:24%" class="centre">{INTERVENANTS_EXTERIEURS}</td>
+<td style="width:24%" class="centre">{AUTRES_INTERVENANTS}</td>
+<td style="width:2%" class="centre" nowrap><a title="{SPAN_VOIR_FICHE_CLASSE}" href="#null" onClick="Classes_L_DetailView_Util('{ID}');"><img src="images/voir.png" width=12 height=12 border=0></a>&nbsp;<a title="{SPAN_MODIFIER_FICHE_CLASSE}" href="#null" onClick="Classes_L_EditView_Util('{ID}');"><img src="images/editer.png" width=12 height=12 border=0></a></td>
+</td>
+</tr>
+<!-- END liste -->
+</tbody>
+</table>
+</div>

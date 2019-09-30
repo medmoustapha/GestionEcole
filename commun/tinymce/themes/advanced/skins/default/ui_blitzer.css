@@ -1,0 +1,26 @@
+.defaultSkinBlitzer td.mceToolbar, .defaultSkinBlitzer td.mceStatusbar, .defaultSkinBlitzer .mceMenuItemTitle a {background:#eeeeee}
+.defaultSkinBlitzer .mceListBox .mceText {background:#FFF}
+
+.defaultSkinBlitzer .mceExternalToolbar, 
+.defaultSkinBlitzer .mceListBox .mceText, 
+.defaultSkinBlitzer .mceListBox .mceOpen, 
+.defaultSkinBlitzer div.mceMenu, 
+.defaultSkinBlitzer table.mceLayout, 
+.defaultSkinBlitzer .mceMenuItemTitle a, 
+.defaultSkinBlitzer table.mceLayout tr.mceFirst td, 
+.defaultSkinBlitzer table.mceLayout, 
+.defaultSkinBlitzer .mceMenuItemTitle a, 
+.defaultSkinBlitzer table.mceLayout tr.mceLast td, 
+.defaultSkinBlitzer .mceIframeContainer, 
+.defaultSkinBlitzer .mceButton, 
+.defaultSkinBlitzer .mceSplitButton .mceAction, 
+.defaultSkinBlitzer .mceSplitButton .mceOpen, 
+.defaultSkinBlitzer .mceSplitButton a.mceAction, 
+.defaultSkinBlitzer .mceSplitButton a.mceOpen, 
+.defaultSkinBlitzer .mceColorSplitMenu .mceMoreColors,
+.defaultSkinBlitzer .mceSplitButtonEnabled .mceAction, 
+.defaultSkinBlitzer .mceSplitButtonHover .mceAction, 
+.defaultSkinBlitzer .mceSplitButtonSelected .mceAction
+{
+	border-color: #d8dcdf;
+}

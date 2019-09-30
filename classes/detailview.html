@@ -1,0 +1,56 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="id" name="id" value="{ID}">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche" width=100%>
+    <input type="Button" id="Modifier" name="Modifier" value="{BTN_MODIFIER_FICHE_CLASSE}">&nbsp;
+    <input type="Button" id="modif_liste" name="modif_liste" value="{BTN_AJOUTER_ELEVE}">&nbsp;
+    <input type="Button" id="Imprimer_Detail" name="Imprimer_Detail" value="{BTN_IMPRIMER}">&nbsp;
+    <input type="Button" id="Retour" name="Retour" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" nowrap>
+	<div class="ui-widget ui-state-default ui-corner-all ui-div-listview textcentre">{LBL_ALLER_A} : {LISTE_CLASSES}</div>
+  </td>
+</tr>
+</table>
+<div id="detailview">
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_INFOS_GENERALES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview" style="width:100%">
+<tr>
+  <td class="droite" style="width:15%" valign=top><label class="label_class">{LBL_NOM_CLASSE} :</label></td>
+  <td class="gauche" style="width:35%" valign=top><label class="label_detail">{NOM_CLASSE}</label></td>
+  <td class="droite" style="width:15%" valign=top><label class="label_class">{LBL_ANNEE_SCOLAIRE_COURS} :</label></td>
+  <td class="gauche" style="width:35%" valign=top><label class="label_detail">{ANNEE}</label></td>
+</tr>
+<tr>
+  <td class="droite" style="width:15%"><label class="label_class">{LBL_NIVEAUX} :</label></td>
+  <td class="gauche" style="width:35%"><label class="label_detail">{NIVEAUX}</label></td>
+  <td class="droite" style="width:15%">&nbsp;</td>
+  <td class="gauche" style="width:35%">&nbsp;</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_PERSONNELS_INTERVENANTS}</div>
+{LISTE_PERSONNEL}
+<br />
+<a name="voir_liste_eleve"></a>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_LISTE_ELEVES_CLASSE}</div>
+{LISTE_ELEVES}
+</div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche" width=100%>
+    <input type="Button" id="Modifier2" name="Modifier2" value="{BTN_MODIFIER_FICHE_CLASSE}">&nbsp;
+    <input type="Button" id="modif_liste2" name="modif_liste2" value="{BTN_AJOUTER_ELEVE}">&nbsp;
+    <input type="Button" id="Imprimer_Detail2" name="Imprimer_Detail2" value="{BTN_IMPRIMER}">&nbsp;
+    <input type="Button" id="Retour2" name="Retour2" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" nowrap>
+	<div class="ui-widget ui-state-default ui-corner-all ui-div-listview textcentre">{LBL_ALLER_A} : {LISTE_CLASSES2}</div>
+  </td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

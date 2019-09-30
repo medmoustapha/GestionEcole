@@ -1,0 +1,56 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="module" name="module" value="absences">
+<input type="hidden" id="action" name="action" value="save_justificatifs">
+<input type="hidden" id="id" name="id" value="{ID}">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input tabIndex=12 type="Submit" id="Enregistrer" name="Enrigistrer" value="{BTN_ENREGISTRER}">&nbsp;
+    <input tabIndex=13 type="Button" id="EnregistrerFermer" name="EnrigistrerFermer" value="{BTN_ENREGISTRER_FERMER}">
+    <input tabIndex=14 type="Button" id="EnregistrerNouveau" name="EnregistrerNouveau" value="{BTN_ENREGISTRER_CREER_NOUVEAU_JUSTIFICATIF}">
+    <input tabIndex=15 type="Button" id="Annuler" name="Annuler" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">Saisie du justificatif</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_ELEVE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{ID_ELEVE}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_TYPE_JUSTIFICATIF} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{TYPE}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_DEBUT} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{DATE_DEBUT}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_FIN} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{DATE_FIN}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_HEURE_DEBUT} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{HEURE_DEBUT}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_HEURE_FIN} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{HEURE_FIN}</td>
+</tr>
+<tr>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_MOTIF} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=85% valign=top colspan=3>{MOTIF}</td>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input tabIndex=8 type="Button" id="Enregistrer2" name="Enrigistrer2" value="{BTN_ENREGISTRER}">&nbsp;
+    <input tabIndex=9 type="Button" id="EnregistrerFermer2" name="EnrigistrerFermer2" value="{BTN_ENREGISTRER_FERMER}">
+    <input tabIndex=10 type="Button" id="EnregistrerNouveau2" name="EnregistrerNouveau2" value="{BTN_ENREGISTRER_CREER_NOUVEAU_JUSTIFICATIF}">
+    <input tabIndex=11 type="Button" id="Annuler2" name="Annuler2" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

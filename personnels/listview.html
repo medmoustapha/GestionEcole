@@ -1,0 +1,92 @@
+<div class="titre_page">{LBL_LISTE_PERSONNEL}</div>
+<div class="aide"><button id="aide">{BTN_AIDE}</button></div>
+
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+    {BUTTON}
+  </td>
+  <td class="textdroite" valign=middle nowrap>
+    <div class="ui-widget ui-state-default ui-corner-all ui-div-listview textcentre">{PRESENTS}</div>
+  </td>
+</tr>
+</table>
+<div class="ui-widget" id="affiche_recherche_personnels" style="visibility:hidden;display:none;"><div class="contour_recherche ui-corner-all">
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+		<div class="titre_recherche">{LBL_RECHERCHE_CIBLEE}</div>
+	</td>
+</tr>
+<tr>
+  <td class="textgauche" width=100%>
+			<div class="recherche"><label class="label_recherche">{LST_NOM} :</label><label class="label_recherche_champ">{RECHERCHE_NOM}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_TELEPHONE} :</label><label class="label_recherche_champ">{RECHERCHE_TEL}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_TYPE} :</label><label class="label_recherche_champ">{RECHERCHE_TYPE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_TELEPHONE2} :</label><label class="label_recherche_champ">{RECHERCHE_TEL2}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DATE_NAISSANCE} :</label><label class="label_recherche_champ">{RECHERCHE_DATE_NAISSANCE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_PORTABLE} :</label><label class="label_recherche_champ">{RECHERCHE_PORTABLE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DATE_ENTREE} :</label><label class="label_recherche_champ">{RECHERCHE_DATE_ENTREE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_EMAIL} :</label><label class="label_recherche_champ">{RECHERCHE_EMAIL}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DATE_SORTIE} :</label><label class="label_recherche_champ">{RECHERCHE_DATE_SORTIE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DATE_INSPECTION} :</label><label class="label_recherche_champ">{RECHERCHE_DATE_DERNIERE_INSPECTION}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DATE_ENTREE_EN} :</label><label class="label_recherche_champ">{RECHERCHE_DATE_ENTREE_EN}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_ECHELON} :</label><label class="label_recherche_champ">{RECHERCHE_ECHELON}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_ACCES_GE} :</label><label class="label_recherche_champ">{RECHERCHE_IDENTIFIANT}</label></div>
+	</td>
+</tr>
+<tr>
+  <td class="textdroite" width=100%>
+		<button tabindex=115 id="vider_personnels" name="vider_personnels">{BTN_VIDER}</button>&nbsp;<button tabindex=114 id="rechercher_personnels" name="rechercher_personnels">{BTN_RECHERCHER}</button>
+	</td>
+</tr>
+</table>
+</div></div>
+<div id="listview">
+<!-- BEGIN liste_entete -->
+<table id="listing_donnees_personnels" class="display" cellpadding=0 cellspacing=0 style="width:100%">
+<thead>
+<tr>
+<th style="width:5%" class="centre">{LST_NUMERO_COLONNE}</th>
+<th style="width:25%" class="centre">{LST_NOM}</th>
+<th style="width:10%" class="centre">{LST_TYPE}</th>
+<th style="width:11%" class="centre">{LST_DATE_NAISSANCE}</th>
+<th style="width:11%" class="centre">{LST_DATE_ENTREE}</th>
+<th style="width:11%" class="centre">{LST_DATE_SORTIE}</th>
+<th style="width:11%" class="centre">{LST_DATE_ENTREE_EN}</th>
+<th style="width:11%" class="centre">{LST_DATE_INSPECTION}</th>
+<th style="width:11%" class="centre">{LST_ECHELON}</th>
+<th style="width:11%" class="centre">{LST_TELEPHONE}</th>
+<th style="width:11%" class="centre">{LST_TELEPHONE2}</th>
+<th style="width:11%" class="centre">{LST_PORTABLE}</th>
+<th style="width:20%" class="centre">{LST_EMAIL}</th>
+<th style="width:10%" class="centre">{LST_ACCES_GE}</th>
+<th style="width:2%" class="centre">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<!-- END liste_entete -->
+
+<!-- BEGIN liste -->
+<tr {SORTI}>
+<td style="width:5%" class="centre">{NUMERO}</td>
+<td style="width:25%" class="gauche"><a title="{SPAN_FICHE_PERSONNEL}" href="#null" onClick="Personnels_L_DetailView_Util('{ID}');">{NOM} {PRENOM}</a></td>
+<td style="width:10%" class="centre">{TYPE}</td>
+<td style="width:11%" class="centre">{DATE_NAISSANCE}</td>
+<td style="width:11%" class="centre">{DATE_ENTREE}</td>
+<td style="width:11%" class="centre">{DATE_SORTIE}</td>
+<td style="width:11%" class="centre">{DATE_ENTREE_EN}</td>
+<td style="width:11%" class="centre">{DATE_DERNIERE_INSPECTION}</td>
+<td style="width:11%" class="centre">{ECHELON}</td>
+<td style="width:11%" class="centre">{TEL}</td>
+<td style="width:11%" class="centre">{TEL2}</td>
+<td style="width:11%" class="centre">{PORTABLE}</td>
+<td style="width:20%" class="centre">{EMAIL}</td>
+<td style="width:10%" class="centre">{ACCES}</td>
+<td style="width:2%" class="centre" nowrap><a title="{SPAN_FICHE_PERSONNEL}" href="#null" onClick="Personnels_L_DetailView_Util('{ID}');"><img src="images/voir.png" width=12 height=12 border=0></a>&nbsp;<a title="{SPAN_MODIFIER_PERSONNEL}" href="#null" onClick="Personnels_L_EditView_Util('{ID}');"><img src="images/editer.png" width=12 height=12 border=0></a></td>
+</td>
+</tr>
+<!-- END liste -->
+</tbody>
+</table>
+</div>

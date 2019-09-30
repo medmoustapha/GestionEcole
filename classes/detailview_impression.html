@@ -1,0 +1,26 @@
+<!-- BEGIN formulaire -->
+<div class="titre_page">{LBL_IMPRESSION_FICHE_DE} {NOM_CLASSE}</div><br /><br />
+<div class="entete_div">{LBL_INFOS_GENERALES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview" style="width:100%">
+<tr>
+  <td style="width:15%;" class="droite label_class" valign=top>{LBL_NOM_CLASSE} :</td>
+  <td style="width:35%;" class="gauche label_detail" valign=top>{NOM_CLASSE}</td>
+  <td style="width:15%;" class="droite label_class" valign=top>{LBL_ANNEE_SCOLAIRE_COURS} :</td>
+  <td style="width:35%;" class="gauche label_detail" valign=top>{ANNEE}</td>
+</tr>
+<tr>
+  <td style="width:15%;" class="droite label_class">{LBL_NIVEAUX} :</td>
+  <td style="width:35%;" class="gauche label_detail">{NIVEAUX}</td>
+  <td style="width:15%;" class="droite label_class">&nbsp;</td>
+  <td style="width:35%;" class="gauche label_detail">&nbsp;</td>
+</tr>
+</table>
+
+<br />
+<div class="entete_div">{LBL_PERSONNELS_INTERVENANTS}</div>
+{LISTE_PERSONNEL}
+
+<br />
+<div class="entete_div">{LBL_LISTE_ELEVES_CLASSE}</div>
+{LISTE_ELEVES}
+<!-- END formulaire -->

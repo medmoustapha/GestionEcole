@@ -1,0 +1,64 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_transfert name=form_transfert>
+<input type="hidden" id="module" name="module" value="cooperative">
+<input type="hidden" id="action" name="action" value="save_transfert">
+<input type="hidden" id="id" name="id" value="{ID}">
+<div id="msg_erreur"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input tabIndex=17 type="Submit" id="Enregistrer_Transfert" name="Enregistrer_Transfert" value="{BTN_ENREGISTRER}">&nbsp;
+    <input tabIndex=18 type="Button" id="Annuler_Transfert" name="Annuler_Transfert" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}&nbsp;&nbsp;&nbsp;<button tabIndex=19 id="aide_fenetre" name="aide_fenetre">{BTN_AIDE}</button></td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="tableau_editview2">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_DATE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_DATE}">{DATE}</span></td>
+  <td class="centre" width=50% colspan=2>&nbsp;</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_TRANSFERT_DE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_TRANSFERT_DE}">{BANQUE2}</span></td>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_TRANSFERT_VERS} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_TRANSFERT_VERS}">{BANQUE}</span></td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_LIBELLE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_TRANSFERT_MOTIF}">{LIBELLE}</span></td>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_SAISIE_REF_BANCAIRE} :</label></td>
+  <td class="gauche" width=35% valign=top><span title="{EXPL_SAISIE_REF_BANCAIRE2}">{REFERENCE_BANCAIRE}</span></td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_PIECE_JUSTIFICATIVE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_TRANSFERT_PIECE_JUSTIFICATIVE}">{PIECE}</span></td>
+  <td class="droite" width=15%>&nbsp;</td>
+  <td class="gauche" width=35%>&nbsp;</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_MONTANT} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_MONTANT}">{MONTANT}</span></td>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_POINTE} :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_POINTE}">{POINTE}</span></td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_CLASSE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_CLASSE}">{ID_CLASSE}</span></td>
+  <td class="droite" width=15%><label class="label_class">{LBL_SAISIE_RELEVE_COMPTE} :</label></td>
+  <td class="gauche" width=35%><span title="{EXPL_SAISIE_RELEVE_COMPTE}">{RELEVE}</span></td>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input tabIndex=15 type="Button" id="Enregistrer2_Transfert" name="Enregistrer2_Transfert" value="{BTN_ENREGISTRER}">&nbsp;
+    <input tabIndex=16 type="Button" id="Annuler2_Transfert" name="Annuler2_Transfert" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

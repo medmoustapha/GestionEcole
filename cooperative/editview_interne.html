@@ -1,0 +1,47 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_interne name=Detail>
+<input type="hidden" id="module" name="module" value="cooperative">
+<input type="hidden" id="action" name="action" value="save_interne">
+<input type="hidden" id="id" name="id" value="{ID}">
+<div id="msg_interne"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input type="Submit" id="Enregistrer_Interne" name="Enrigistrer_Interne" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="EnregistrerFermer_Interne" name="EnrigistrerFermer_Interne" value="{BTN_ENREGISTRER_FERMER}">
+    <input type="Button" id="Annuler_Interne" name="Annuler_Interne" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="tableau_editview2">
+<tr>
+  <td class="droite" width=30%><label class="label_class">{LBL_SAISIE_DATE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=70%><span title="{EXPL_FONCTIONNEMENT_DATE}">{DATE}</span></td>
+</tr>
+<tr>
+  <td class="droite" width=30%><label class="label_class">{LBL_SAISIE_CLASSE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=70%><span title="{EXPL_FONCTIONNEMENT_CLASSE}">{ID_CLASSE}</span></td>
+</tr>
+<tr>
+  <td class="droite" width=30%><label class="label_class">{LBL_SAISIE_LIBELLE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=70%><span title="{EXPL_FONCTIONNEMENT_LIBELLE}">{LIBELLE}</span></td>
+</tr>
+<tr>
+  <td class="droite" width=30%><label class="label_class">{LBL_SAISIE_MONTANT} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=70%><span title="{EXPL_FONCTIONNEMENT_MONTANT}">{MONTANT}</span></td>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input type="Button" id="Enregistrer2_Interne" name="Enrigistrer2_Interne" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="EnregistrerFermer2_Interne" name="EnrigistrerFermer2_Interne" value="{BTN_ENREGISTRER_FERMER}">
+    <input type="Button" id="Annuler2_Interne" name="Annuler2_Interne" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

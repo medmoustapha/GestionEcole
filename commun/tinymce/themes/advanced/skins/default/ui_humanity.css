@@ -1,0 +1,26 @@
+.defaultSkinHumanity td.mceToolbar, .defaultSkinHumanity td.mceStatusbar, .defaultSkinHumanity .mceMenuItemTitle a {background:#ede4d4}
+.defaultSkinHumanity .mceListBox .mceText {background:#FFF}
+
+.defaultSkinHumanity .mceExternalToolbar, 
+.defaultSkinHumanity .mceListBox .mceText, 
+.defaultSkinHumanity .mceListBox .mceOpen, 
+.defaultSkinHumanity div.mceMenu, 
+.defaultSkinHumanity table.mceLayout, 
+.defaultSkinHumanity .mceMenuItemTitle a, 
+.defaultSkinHumanity table.mceLayout tr.mceFirst td, 
+.defaultSkinHumanity table.mceLayout, 
+.defaultSkinHumanity .mceMenuItemTitle a, 
+.defaultSkinHumanity table.mceLayout tr.mceLast td, 
+.defaultSkinHumanity .mceIframeContainer, 
+.defaultSkinHumanity .mceButton, 
+.defaultSkinHumanity .mceSplitButton .mceAction, 
+.defaultSkinHumanity .mceSplitButton .mceOpen, 
+.defaultSkinHumanity .mceSplitButton a.mceAction, 
+.defaultSkinHumanity .mceSplitButton a.mceOpen, 
+.defaultSkinHumanity .mceColorSplitMenu .mceMoreColors,
+.defaultSkinHumanity .mceSplitButtonEnabled .mceAction, 
+.defaultSkinHumanity .mceSplitButtonHover .mceAction, 
+.defaultSkinHumanity .mceSplitButtonSelected .mceAction
+{
+	border-color: #cdc3b7;
+}

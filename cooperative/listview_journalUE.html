@@ -1,0 +1,41 @@
+<div class="titre_page">{LBL_JOURNAL3}</div>
+<div class="aide"><button id="aide">{BTN_AIDE}</button></div>
+
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="marge5_bas">
+<tr>
+  <td class="droite" nowrap>
+    <div class="ui-widget ui-state-default ui-corner-all floatdroite ui-div-listview textcentre">{LBL_SAISIE_EXERCICE} : {ANNEE_S}</div>
+  </td>
+</tr>
+</table>
+
+<div id="listview">
+<!-- BEGIN liste_entete -->
+<table id="listing_donnees_journal" class="display" cellpadding=0 cellspacing=0 style="width:100%">
+<thead>
+<tr>
+<th style="width:10%" class="centre">{LBL_SAISIE_DATE}</th>
+<th style="width:36%" class="centre">{LBL_SAISIE_LIBELLE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_BANQUE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_MODE_PAIEMENT2}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_ENTREE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_SORTIE}</th>
+</tr>
+</thead>
+<tbody>
+<!-- END liste_entete -->
+
+<!-- BEGIN liste -->
+<tr>
+<td style="width:10%" class="centre">{DATE}</td>
+<td style="width:36%" class="gauche"><a title="{SPAN_JOURNAL_VOIR_FICHE}" href="#null" onClick="Coop_Journal_DetailView_Util('{ID}','{TYPE}');">{LIBELLE}</a></td>
+<td style="width:10%" class="centre">{BANQUE}</td>
+<td style="width:10%" class="centre">{MODE}</td>
+<td style="width:10%" class="droite">{CREDIT}</td>
+<td style="width:10%" class="droite">{DEBIT}</td>
+</td>
+</tr>
+<!-- END liste -->
+</tbody>
+</table>
+</div>

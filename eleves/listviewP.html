@@ -1,0 +1,103 @@
+<div class="titre_page">{LBL_LISTE_ELEVES}</div>
+<div class="aide"><button id="aide">{BTN_AIDE}</button></div>
+
+<table cellpadding=0 cellspacing=0 style="width:100%" border=0>
+<tr>
+  <td class="textdroite" style="width:50%" valign=middle nowrap>
+    <div class="ui-widget ui-state-default ui-corner-right floatdroite ui-div-listview textcentre">{PRESENTS}</div>
+    <div class="ui-widget ui-state-default ui-corner-left floatdroite ui-div-listview textcentre">{LBL_CLASSE} : {CLASSES_S}</div>
+  </td>
+</tr>
+<tr>
+  <td class="textgauche">
+    <button id="Rechercher_Liste">{BTN_RECHERCHE_CIBLEE}</button>&nbsp;<button id="Imprimer">{BTN_IMPRIMER}</button>
+  </td>
+</tr>
+</table>
+<div class="ui-widget" id="affiche_recherche_eleves" style="visibility:hidden;display:none;"><div class="contour_recherche ui-corner-all">
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+		<div class="titre_recherche">{LBL_RECHERCHE_CIBLEE}</div>
+	</td>
+</tr>
+<tr>
+  <td class="textgauche" width=100%>
+			<div class="recherche"><label class="label_recherche">{LST_ELEVE} :</label><label class="label_recherche_champ">{RECHERCHE_NOM}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_TEL_PERE} :</label><label class="label_recherche_champ">{RECHERCHE_TEL_PERE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_NIVEAU} :</label><label class="label_recherche_champ">{RECHERCHE_NIVEAUX}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_TEL2_PERE} :</label><label class="label_recherche_champ">{RECHERCHE_TEL2_PERE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DATE_NAISSANCE} :</label><label class="label_recherche_champ">{RECHERCHE_DATE_NAISSANCE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_PORTABLE_PERE} :</label><label class="label_recherche_champ">{RECHERCHE_PORTABLE_PERE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_SEXE} :</label><label class="label_recherche_champ">{RECHERCHE_SEXE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_TEL_MERE} :</label><label class="label_recherche_champ">{RECHERCHE_TEL_MERE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DATE_ENTREE} :</label><label class="label_recherche_champ">{RECHERCHE_DATE_ENTREE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_TEL2_MERE} :</label><label class="label_recherche_champ">{RECHERCHE_TEL2_MERE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_DATE_SORTIE} :</label><label class="label_recherche_champ">{RECHERCHE_DATE_SORTIE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_PORTABLE_MERE} :</label><label class="label_recherche_champ">{RECHERCHE_PORTABLE_MERE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_ASSURANCE_IA} :</label><label class="label_recherche_champ">{RECHERCHE_ASSURANCE_IA}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_ACCES_GE} :</label><label class="label_recherche_champ">{RECHERCHE_IDENTIFIANT}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_ASSURANCE_RC} :</label><label class="label_recherche_champ">{RECHERCHE_ASSURANCE_RC}</label></div>
+	</td>
+</tr>
+<tr>
+  <td class="textdroite" width=100%>
+		<button tabindex=117 id="vider_eleves" name="vider_eleves">{BTN_VIDER}</button>&nbsp;<button tabindex=116 id="rechercher_eleves" name="rechercher_eleves">{BTN_RECHERCHER}</button>
+	</td>
+</tr>
+</table>
+</div></div>
+<div id="listview">
+<!-- BEGIN liste_entete -->
+<table id="listing_donnees_eleves" class="display" cellpadding=0 cellspacing=0  style="width:100%">
+<thead>
+<tr>
+<th style="width:5%" class="centre">{LST_NUMERO_COLONNE}</th>
+<th style="width:16%" class="centre">{LST_ELEVE}</th>
+<th style="width:7%" class="centre">{LST_CLASSE}</th>
+<th style="width:7%" class="centre">{LST_NIVEAU}</th>
+<th style="width:7%" class="centre">{LST_DATE_NAISSANCE}</th>
+<th style="width:7%" class="centre">{LST_SEXE}</th>
+<th style="width:7%" class="centre">{LST_DATE_ENTREE}</th>
+<th style="width:7%" class="centre">{LST_DATE_SORTIE}</th>
+<th style="width:10%" class="centre">{LST_TEL_PERE}</th>
+<th style="width:10%" class="centre">{LST_TEL2_PERE}</th>
+<th style="width:10%" class="centre">{LST_PORTABLE_PERE}</th>
+<th style="width:10%" class="centre">{LST_TEL_MERE}</th>
+<th style="width:10%" class="centre">{LST_TEL2_MERE}</th>
+<th style="width:10%" class="centre">{LST_PORTABLE_MERE}</th>
+<th style="width:10%" class="centre">{LST_ASSURANCE_IA}</th>
+<th style="width:10%" class="centre">{LST_ASSURANCE_RC}</th>
+<th style="width:8%" class="centre">{LST_ACCES_GE}</th>
+<th class="centre" style="width:2%">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<!-- END liste_entete -->
+
+<!-- BEGIN liste -->
+<tr {SORTI}>
+<td style="width:5%" class="centre">{NUMERO}</td>
+<td style="width:16%" class="gauche"><a title="{SPAN_VOIR_ELEVE}" href="#null" onClick="Eleves_L_DetailView_Util('{ID}');">{NOM} {PRENOM}</a></td>
+<td style="width:7%" class="centre">{CLASSE}</td>
+<td style="width:7%" class="centre">{NIVEAU}</td>
+<td style="width:7%" class="centre">{DATE_NAISSANCE}</td>
+<td style="width:7%" class="centre">{SEXE}</td>
+<td style="width:7%" class="centre">{DATE_ENTREE}</td>
+<td style="width:7%" class="centre">{DATE_SORTIE}</td>
+<td style="width:10%" class="centre">{TEL_PERE}</td>
+<td style="width:10%" class="centre">{TEL2_PERE}</td>
+<td style="width:10%" class="centre">{PORTABLE_PERE}</td>
+<td style="width:10%" class="centre">{TEL_MERE}</td>
+<td style="width:10%" class="centre">{TEL2_MERE}</td>
+<td style="width:10%" class="centre">{PORTABLE_MERE}</td>
+<td style="width:10%" class="centre">{ASSURANCE_IA}</td>
+<td style="width:10%" class="centre">{ASSURANCE_RC}</td>
+<td style="width:8%" class="centre">{ACCES}</td>
+<td style="width:2%" class="centre" nowrap><a title="{SPAN_VOIR_ELEVE}" href="#null" onClick="Eleves_L_DetailView_Util('{ID}');"><img src="images/voir.png" width=12 height=12 border=0></a>{MODIFIER}</td>
+</td>
+</tr>
+<!-- END liste -->
+</tbody>
+</table>
+</div>

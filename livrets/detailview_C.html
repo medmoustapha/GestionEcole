@@ -1,0 +1,58 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id="form_detailview" name="form_detailview">
+<input type="hidden" id="module" name="module" value="livrets">
+<input type="hidden" id="action" name="action" value="save_resultats">
+<input type="hidden" id="id" name="id" value="{ID}">
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td align=left>
+    <input type="Button" id="Modifier" name="Modifier" value="{BTN_MODIFIER}">&nbsp;
+    <input type="Submit" id="Enregistrer_Result" name="Enregistrer_Result" value="{BTN_ENREGISTRER_RESULTATS}">&nbsp;
+    <input type="Button" id="Supprimer_Result" name="Supprimer_Result" value="{BTN_SUPPRIMER_EVALUATION}">&nbsp;
+    <input type="Button" id="Retour" name="Retour" value="{BTN_ANNULER}">
+  </td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_INFOS_GENERALES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_CONTROLE} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{DATE}</label></td>
+  <td class="droite" width=15%><label class="label_class">{LBL_TRIMESTRE} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{TRIMESTRE}</label></td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_MATIERE} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{ID_MATIERE}</label></td>
+  <td class="droite" width=15%><label class="label_class">{LBL_ENSEIGNANT} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{ID_PROF}</label></td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_COEFFICIENT} :</label></td>
+  <td class="gauche" width=35%><label class="label_detail">{COEFFICIENT}</label></td>
+  <td class="droite" width=15%>&nbsp;</td>
+  <td class="gauche" width=35%>&nbsp;</td>
+</tr>
+<tr>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_DESCRIPTIF} :</label></td>
+  <td class="gauche" width=85% colspan=3 valign=top><label class="label_detail">{DESCRIPTIF}</label></td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_COMPETENCES_EVALUEES}</div>
+{LISTE_COMPETENCES}
+<br />
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_RESULTATS_ELEVES}</div>
+{LISTE_ELEVES}
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input type="Button" id="Modifier2" name="Modifier2" value="{BTN_MODIFIER}">&nbsp;
+    <input type="Button" id="Enregistrer_Result2" name="Enregistrer_Result2" value="{BTN_ENREGISTRER_RESULTATS}">&nbsp;
+    <input type="Button" id="Supprimer_Result2" name="Supprimer_Result2" value="{BTN_SUPPRIMER_EVALUATION}">&nbsp;
+    <input type="Button" id="Retour2" name="Retour2" value="{BTN_ANNULER}">
+  </td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

@@ -1,0 +1,65 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="module" name="module" value="configuration">
+<input type="hidden" id="action" name="action" value="save_etab">
+<input type="hidden" id="id" name="id" value="coordonnees">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input type="Submit" id="Enregistrer" name="Enrigistrer" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="EnregistrerFermer" name="EnrigistrerFermer" value="{BTN_ENREGISTRER_FERMER}">
+    <input type="Button" id="Annuler" name="Annuler" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}&nbsp;&nbsp;&nbsp;<input type="Button" id="aide_fenetre" name="aide_fenetre" value="{BTN_AIDE}"></td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_COORDONNEES_INFOS_GENERALES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_COORDONNEES_NOM} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{NOM}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_COORDONNEES_TELEPHONE} :</label></td>
+  <td class="gauche" width=35%>{TELEPHONE}</td>
+</tr>
+<tr>
+  <td class="droite" width=15% rowspan=4 valign=top><label class="label_class">{LBL_COORDONNEES_ADRESSE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35% rowspan=4 valign=top>{ADRESSE}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_COORDONNEES_TELEPHONE} :</label></td>
+  <td class="gauche" width=35%>{TELEPHONE2}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_COORDONNEES_FAX} :</label></td>
+  <td class="gauche" width=35%>{FAX}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_COORDONNEES_EMAIL} :</label></td>
+  <td class="gauche" width=35%>{EMAIL}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_COORDONNEES_SITE_WEB} :</label></td>
+  <td class="gauche" width=35%>{SITE_WEB}</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_COORDONNEES_INFOS_SECONDAIRES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview2">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_COORDONNEES_CIRCONSCRIPTION} :</label></td>
+  <td class="gauche" width=35%>{CIRCONSCRIPTION}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_COORDONNEES_RNE} :</label></td>
+  <td class="gauche" width=35%>{RNE}</td>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input type="Button" id="Enregistrer2" name="Enrigistrer2" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="EnregistrerFermer2" name="EnrigistrerFermer2" value="{BTN_ENREGISTRER_FERMER}">
+    <input type="Button" id="Annuler2" name="Annuler2" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

@@ -1,0 +1,51 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=form_editview>
+<input type="hidden" id="module" name="module" value="livrets">
+<input type="hidden" id="action" name="action" value="save_infos">
+<input type="hidden" id="id" name="id" value="{ID}">
+<input type="hidden" id="id_classe" name="id_classe" value="{ID_CLASSE}">
+<input type="hidden" id="id_niveau" name="id_niveau" value="{ID_NIVEAU}">
+<input type="hidden" id="coefficient" name="coefficient" value="1">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input type="Submit" id="Enregistrer" name="Enrigistrer" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="Annuler" name="Annuler" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_INFOS_GENERALES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE_CONTROLE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{DATE}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_TRIMESTRE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{TRIMESTRE}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_MATIERE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{ID_MATIERE}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_ENSEIGNANT} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{ID_PROF}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DESCRIPTIF} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=85% colspan=3>{DESCRIPTIF}</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_COMPETENCES_EVALUEES}</div>
+{LISTE_COMPETENCES}
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input type="Button" id="Enregistrer2" name="Enrigistrer2" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="Annuler2" name="Annuler2" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

@@ -1,0 +1,79 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="module" name="module" value="configuration">
+<input type="hidden" id="action" name="action" value="save_etab">
+<input type="hidden" id="message_c" name="message_c" value="">
+<input type="hidden" id="id" name="id" value="messagerie">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input type="Submit" id="Enregistrer" name="Enrigistrer" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="EnregistrerFermer" name="EnrigistrerFermer" value="{BTN_ENREGISTRER_FERMER}">
+    <input type="Button" id="Annuler" name="Annuler" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}&nbsp;&nbsp;&nbsp;<input type="Button" id="aide_fenetre" name="aide_fenetre" value="{BTN_AIDE}"></td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_CONFIG_PARAMETRES_GENERAUX}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=50%><label class="label_class">{LBL_CONFIG_LANGUE_DEFAUT} :</label></td>
+  <td class="gauche" width=50%>{LANGUE_DEFAUT}</td>
+</tr>
+<tr>
+  <td class="droite" width=50%><label class="label_class" style="width:380px">{LBL_CONFIG_DECALAGE} :</label></td>
+  <td class="gauche" width=50%>{DECALAGE_HORAIRE}</td>
+</tr>
+<tr>
+  <td class="gauche marge60_gauche" width=100% colspan=2><font style="font-size:10px">{EXPL_CONFIG_DECALAGE}<b>{DECALAGE_HORAIRE_DATE_ACTUELLE}</b>.<br>{EXPL_CONFIG_DECALAGE2}</font></td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_CONFIG_MSG_ACCUEIL}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview">
+<tr>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_CONFIG_MSG_ACCUEIL2} :</label></td>
+  <td class="gauche" width=85%>{MESSAGE_CONNEXION}</td>
+</tr>
+</table>
+<div class="ui-widget ui-widget-header ui-state-default ui-corner-all ui-div-separation-form">{LBL_CONFIG_INFOS_MESSAGERIE}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview2">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_CONFIG_URL_GESTECOLE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{URL_GESTECOLE}</td>
+  <td class="gauche" width=50% rowspan=4>
+	<p class="explic" style="text-align:left">{LBL_CONFIG_MSG_EXEMPLE} :</p>
+	<div class="ui-widget" style="width:400px"><div class="ui-state-highlight ui-corner-all margin10_haut marge10_tout textgauche" style="margin-bottom:7px">
+	<p class="explic" style="text-align:left">{LBL_CONFIG_MSG_EXEMPLE2}</p>
+	<p class="explic" style="text-align:left">{LBL_CONFIG_MSG_EXEMPLE3}</p>
+	<p class="explic" style="text-align:left">{LBL_CONFIG_MSG_EXEMPLE4} <span id="maj_url">{URL_GESTECOLE2}</span> {LBL_CONFIG_MSG_EXEMPLE4BIS}</p>
+	<p class="explic" style="text-align:left">{LBL_CONFIG_MSG_EXEMPLE5},</p>
+	<p id="signataire" class="explic" style="text-align:left">{SIGNATURE2}</p>
+	</div></div>
+  </td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_CONFIG_EMAIL_DEFAUT} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{EMAIL_DEFAUT}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_CONFIG_SIGNATAIRE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{SIGNATURE}</td>
+</tr>
+<tr>
+  <td colspan=2 width=50%><br><br><br></td>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input type="Button" id="Enregistrer2" name="Enrigistrer2" value="{BTN_ENREGISTRER}">&nbsp;
+    <input type="Button" id="EnregistrerFermer2" name="EnrigistrerFermer2" value="{BTN_ENREGISTRER_FERMER}">
+    <input type="Button" id="Annuler2" name="Annuler2" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->

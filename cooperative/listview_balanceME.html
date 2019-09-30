@@ -1,0 +1,72 @@
+<div class="titre_page">{LBL_BALANCE2}</div>
+<div class="aide"><button id="aide">{BTN_AIDE}</button></div>
+
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="droite" nowrap>
+    <div class="ui-widget ui-state-default ui-corner-right floatdroite ui-div-listview textcentre">{LBL_SAISIE_VISUEL} : {DOCUMENTS}</div>
+    <div class="ui-widget ui-state-default ui-corner-left floatdroite ui-div-listview textcentre">{LBL_SAISIE_EXERCICE} : {ANNEE_S}</div>
+  </td>
+</tr>
+<tr>
+  <td class="gauche">
+    <button name="bilan_coop" id="bilan_coop">{LBL_BILAN_COMPTABLE}</button>&nbsp;
+    <button id="Rechercher_Liste">{BTN_RECHERCHE_CIBLEE}</button>&nbsp;
+    <button name="imprimer_doc" id="imprimer_doc">{BTN_IMPRIMER}</button>
+  </td>
+</tr>
+</table>
+
+<div class="ui-widget marge10_bas" id="affiche_recherche_balance" style="visibility:hidden;display:none;"><div class="contour_recherche ui-corner-all">
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+		<div class="titre_recherche">{LBL_RECHERCHE_CIBLEE}</div>
+	</td>
+</tr>
+<tr>
+  <td class="textgauche" width=100%>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_LIGNE_COMPTABLE} :</label><label class="label_recherche_champ">{RECHERCHE_LIBELLE}</label></div>
+			<div class="recherche"><label class="label_recherche">&nbsp;</label><label class="label_recherche_champ">&nbsp;</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_BALANCE_MONTANT_DEBIT} :</label><label class="label_recherche_champ">{RECHERCHE_BALANCE_DEBIT}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_BALANCE_SOLDE_DEBIT} :</label><label class="label_recherche_champ">{RECHERCHE_SOLDE_DEBIT}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_BALANCE_MONTANT_CREDIT} :</label><label class="label_recherche_champ">{RECHERCHE_BALANCE_CREDIT}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_BALANCE_SOLDE_CREDIT} :</label><label class="label_recherche_champ">{RECHERCHE_SOLDE_CREDIT}</label></div>
+	</td>
+</tr>
+<tr>
+  <td class="textdroite" width=100%>
+		<button tabindex=107 id="vider_balance" name="vider_balance">{BTN_VIDER}</button>&nbsp;<button tabindex=106 id="rechercher_balance" name="rechercher_balance">{BTN_RECHERCHER}</button>
+	</td>
+</tr>
+</table>
+</div></div>
+
+<div id="listview">
+<!-- BEGIN liste_entete -->
+<table id="listing_donnees_balance" class="display" cellpadding=0 cellspacing=0 style="width:100%">
+<thead>
+<tr>
+<th style="width:60%" class="centre">{LBL_SAISIE_LIGNE_COMPTABLE}</th>
+<th style="width:10%" class="centre">{LBL_BALANCE_MONTANT_DEBIT}</th>
+<th style="width:10%" class="centre">{LBL_BALANCE_MONTANT_CREDIT}</th>
+<th style="width:10%" class="centre">{LBL_BALANCE_SOLDE_DEBIT}</th>
+<th style="width:10%" class="centre">{LBL_BALANCE_SOLDE_CREDIT}</th>
+</tr>
+</thead>
+<tbody>
+<!-- END liste_entete -->
+
+<!-- BEGIN liste -->
+<tr>
+<td style="width:60%" class="gauche">{LIBELLE}</td>
+<td style="width:10%" class="droite">{DEBIT}</td>
+<td style="width:10%" class="droite">{CREDIT}</td>
+<td style="width:10%" class="droite">{SOLDE_DEBIT}</td>
+<td style="width:10%" class="droite">{SOLDE_CREDIT}</td>
+</td>
+</tr>
+<!-- END liste -->
+</tbody>
+</table>
+</div>

@@ -1,0 +1,6 @@
+<?php
+  session_start();
+
+  $_SESSION['mois_en_cours']=$_POST['nouveau_mois'];
+  $_SESSION['calendrier']="mois";
+?>

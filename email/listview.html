@@ -1,0 +1,67 @@
+<div class="titre_page">{LBL_VOS_MESSAGES}</div>
+<div class="aide"><button id="aide">{BTN_AIDE}</button></div>
+
+<table cellpadding=0 cellspacing=0 style="width:100%" border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <button id="creer-element">{LBL_ENVOYER_MESSAGE}</button>&nbsp;<button id="Rechercher_Liste">{BTN_RECHERCHE_CIBLEE}</button>
+  </td>
+  <td class="droite" valign=middle nowrap>
+    <div class="ui-widget ui-state-default ui-corner-all floatdroite ui-div-listview textcentre">{LBL_DOSSIER} : {DOSSIER}</div>
+  </td>
+</tr>
+</table>
+
+<div class="ui-widget marge10_bas" id="affiche_recherche_email" style="visibility:hidden;display:none;"><div class="contour_recherche ui-corner-all">
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+		<div class="titre_recherche">{LBL_RECHERCHE_CIBLEE}</div>
+	</td>
+</tr>
+<tr>
+  <td class="textgauche" width=100%>
+			<div class="recherche"><label class="label_recherche">{LBL_DATE} :</label><label class="label_recherche_champ">{RECHERCHE_DATE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_EXPEDITEUR} :</label><label class="label_recherche_champ">{RECHERCHE_EXPEDITEUR}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SUJET_COURT} :</label><label class="label_recherche_champ">{RECHERCHE_TITRE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_DESTINATAIRE} :</label><label class="label_recherche_champ">{RECHERCHE_DESTINATAIRE}</label></div>
+	</td>
+</tr>
+<tr>
+  <td class="textdroite" width=100%>
+		<button tabindex=106 id="vider_email" name="vider_email">{BTN_VIDER}</button>&nbsp;<button tabindex=105 id="rechercher_email" name="rechercher_email">{BTN_RECHERCHER}</button>
+	</td>
+</tr>
+</table>
+</div></div>
+
+<div id="listview">
+<!-- BEGIN liste_entete -->
+<table id="listing_donnees_email" class="display" cellpadding=0 cellspacing=0  style="width:100%">
+<thead>
+<tr>
+<th style="width:5%" class="centre">{LST_NUMERO_COLONNE}</th>
+<th style="width:15%" class="centre">{LBL_DATE}</th>
+<th style="width:20%" class="centre">{LBL_EXPEDITEUR}</th>
+<th style="width:20%" class="centre">{LBL_DESTINATAIRE}</th>
+<th style="width:20%" class="centre">{LBL_DESTINATAIRE2}</th>
+<th style="width:40%" class="centre">{LBL_SUJET_COURT}</th>
+</tr>
+</thead>
+<tbody>
+<!-- END liste_entete -->
+
+<!-- BEGIN liste -->
+<tr>
+<td style="width:5%" class="centre">{GRAS}{NUMERO}{GRAS_FIN}</td>
+<td style="width:15%" class="centre">{GRAS}{DATE}{GRAS_FIN}</td>
+<td style="width:20%" class="gauche">{GRAS}{EXPEDITEUR}{GRAS_FIN}</td>
+<td style="width:20%" class="gauche">{GRAS}{DESTINATAIRE}{GRAS_FIN}</td>
+<td style="width:20%" class="gauche">{DESTINATAIRE2}</td>
+<td style="width:40%" class="gauche">{GRAS}<a title="{LBL_LIRE_MESSAGE2}" href="#null" onClick="Emails_L_DetailView_Util('{ID}');">{TITRE}</a>{GRAS_FIN}</td>
+</td>
+</tr>
+<!-- END liste -->
+</tbody>
+</table>
+</div>

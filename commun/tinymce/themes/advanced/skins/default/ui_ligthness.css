@@ -1,0 +1,26 @@
+.defaultSkinLigthness td.mceToolbar, .defaultSkinLigthness td.mceStatusbar, .defaultSkinLigthness .mceMenuItemTitle a {background:#f6f6f6}
+.defaultSkinLigthness .mceListBox .mceText {background:#FFF}
+
+.defaultSkinLigthness .mceExternalToolbar, 
+.defaultSkinLigthness .mceListBox .mceText, 
+.defaultSkinLigthness .mceListBox .mceOpen, 
+.defaultSkinLigthness div.mceMenu, 
+.defaultSkinLigthness table.mceLayout, 
+.defaultSkinLigthness .mceMenuItemTitle a, 
+.defaultSkinLigthness table.mceLayout tr.mceFirst td, 
+.defaultSkinLigthness table.mceLayout, 
+.defaultSkinLigthness .mceMenuItemTitle a, 
+.defaultSkinLigthness table.mceLayout tr.mceLast td, 
+.defaultSkinLigthness .mceIframeContainer, 
+.defaultSkinLigthness .mceButton, 
+.defaultSkinLigthness .mceSplitButton .mceAction, 
+.defaultSkinLigthness .mceSplitButton .mceOpen, 
+.defaultSkinLigthness .mceSplitButton a.mceAction, 
+.defaultSkinLigthness .mceSplitButton a.mceOpen, 
+.defaultSkinLigthness .mceColorSplitMenu .mceMoreColors,
+.defaultSkinLigthness .mceSplitButtonEnabled .mceAction, 
+.defaultSkinLigthness .mceSplitButtonHover .mceAction, 
+.defaultSkinLigthness .mceSplitButtonSelected .mceAction
+{
+	border-color: #cccccc;
+}

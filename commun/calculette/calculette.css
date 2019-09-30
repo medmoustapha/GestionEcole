@@ -1,0 +1,39 @@
+.calculatrice
+{
+        width:300px;
+        margin:0px;
+        padding-left:5px;
+        padding-bottom:5px;
+}
+.calculatrice td
+{
+}
+.calc_td_resultat
+{
+        text-align:center;
+}
+.calc_resultat
+{
+        width:90%;
+        text-align:right;
+}
+.calc_td_calculs
+{
+        text-align:center;
+}
+.calc_calculs
+{
+        width:90%;
+        text-align:left;
+}
+.calc_td_btn
+{
+        width:25%;
+        height:35px;
+		text-align:center;
+}
+.calc_btn
+{
+        width:90%;
+        height:35px;
+}

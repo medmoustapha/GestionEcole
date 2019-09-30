@@ -1,0 +1,190 @@
+<!-- BEGIN formulaire -->
+<div class="titre_page">{LBL_IMPRESSION_FICHE} {NOM} {PRENOM}</div><br /><br />
+<div class="entete_div">{LBL_INFOS_GENERALES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview" style="width:100%">
+<tr>
+  <td style="width:25%;vertical-align:top" class="droite label_class">{LBL_ELEVE} :</td>
+  <td style="width:35%;vertical-align:top" class="gauche label_detail">{NOM} {PRENOM}</td>
+  <td class="droite label_class" style="width:40%;vertical-align:top" rowspan=7><img src="{PHOTO}" height=250 width=190 border=0></td>
+</tr>
+<tr>
+  <td style="width:25%;" class="droite label_class">{LBL_SEXE} :</td>
+  <td style="width:35%;" class="gauche label_detail">{SEXE}</td>
+</tr>
+<tr>
+  <td style="width:25%;" class="droite label_class">{LBL_DATE_NAISSANCE} :</td>
+  <td style="width:35%;" class="gauche label_detail">{DATE_NAISSANCE}</td>
+</tr>
+<tr>
+  <td style="width:25%;" class="droite label_class">{LBL_LIEU_NAISSANCE} :</td>
+  <td style="width:35%;" class="gauche label_detail">{LIEU_NAISSANCE}</td>
+</tr>
+<tr>
+  <td style="width:25%;vertical-align:top" class="droite label_class">{LBL_ADRESSE} :</td>
+  <td style="width:35%;vertical-align:top" class="gauche label_detail">{ADRESSE}</td>
+</tr>
+<tr>
+  <td style="width:25%;" class="droite label_class">{LBL_DATE_ENTREE} :</td>
+  <td style="width:35%;" class="gauche label_detail">{DATE_ENTREE}</td>
+</tr>
+<tr>
+  <td style="width:25%;" class="droite label_class">{LBL_DATE_SORTIE} :</td>
+  <td style="width:35%;" class="gauche label_detail">{DATE_SORTIE}</td>
+</tr>
+</table>
+
+<div class="entete_div">{LBL_PARENTS}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview" style="width:100%">
+<tr>
+  <td style="width:50%" colspan=5><br></td>
+</tr>
+<tr>
+  <td class="gauche_div" style="width:49%;" colspan=2>{LBL_PERE}</td>
+  <td style="width:2%;"><br></td>
+  <td class="gauche_div" style="width:49%" colspan=2>{LBL_MERE}</td>
+</tr>
+<tr>
+  <td style="width:15%;" class="droite label_class">{LBL_NOM} :</td>
+  <td style="width:34%;" class="gauche label_detail">{CIVILITE_PERE} {NOM_PERE} {PRENOM_PERE}</td>
+  <td style="width:2%;"><br></td>
+  <td style="width:15%;" class="droite label_class">{LBL_NOM} :</td>
+  <td style="width:34%;" class="gauche label_detail">{CIVILITE_MERE} {NOM_MERE} {PRENOM_MERE}</td>
+</tr>
+<tr>
+  <td style="width:15%;" class="droite label_class">&nbsp;</td>
+  <td style="width:34%;" class="gauche label_detail">&nbsp;</td>
+  <td style="width:2%;"><br></td>
+  <td style="width:15%;" class="droite label_class">{LBL_MERE_NOM_JEUNE_FILLE} :</td>
+  <td style="width:34%;" class="gauche label_detail">{NOM_JF_MERE}</td>
+</tr>
+<tr>
+  <td class="droite label_class" style="width:15%">{LBL_EST_RESPONSABLE} :</td>
+  <td class="gauche label_detail" style="width:34%">{RESPONSABLE_PERE}</td>
+  <td style="width:2%;"><br></td>
+  <td class="droite label_class" style="width:15%">{LBL_EST_RESPONSABLE} :</td>
+  <td class="gauche label_detail" style="width:34%">{RESPONSABLE_MERE}</td>
+</tr>
+<tr>
+  <td style="width:15%;vertical-align:top" class="droite label_class">{LBL_ADRESSE} :</td>
+  <td style="width:34%;vertical-align:top" class="gauche label_detail">{ADRESSE_PERE}</td>
+  <td style="width:2%;"><br></td>
+  <td style="width:15%;vertical-align:top" class="droite label_class">{LBL_ADRESSE} :</td>
+  <td style="width:34%;vertical-align:top" class="gauche label_detail">{ADRESSE_MERE}</td>
+</tr>
+<tr>
+  <td style="width:15%;" class="droite label_class">{LBL_TELEPHONE} :</td>
+  <td style="width:34%;" class="gauche label_detail">{TEL_PERE}</td>
+  <td style="width:2%;"><br></td>
+  <td style="width:15%;" class="droite label_class">{LBL_TELEPHONE} :</td>
+  <td style="width:34%;" class="gauche label_detail">{TEL_MERE}</td>
+</tr>
+<tr>
+  <td style="width:15%;" class="droite label_class">{LBL_TELEPHONE2} :</td>
+  <td style="width:34%;" class="gauche label_detail">{TEL2_PERE}</td>
+  <td style="width:2%;"><br></td>
+  <td style="width:15%;" class="droite label_class">{LBL_TELEPHONE2} :</td>
+  <td style="width:34%;" class="gauche label_detail">{TEL2_MERE}</td>
+</tr>
+<tr>
+  <td style="width:15%;" class="droite label_class">{LBL_PORTABLE} :</td>
+  <td style="width:34%;" class="gauche label_detail">{PORTABLE_PERE}</td>
+  <td style="width:2%;"><br></td>
+  <td style="width:15%;" class="droite label_class">{LBL_PORTABLE} :</td>
+  <td style="width:34%;" class="gauche label_detail">{PORTABLE_MERE}</td>
+</tr>
+<tr>
+  <td style="width:15%;" class="droite label_class">{LBL_EMAIL} :</td>
+  <td style="width:34%;" class="gauche label_detail">{EMAIL_PERE}</td>
+  <td style="width:2%;"><br></td>
+  <td style="width:15%;" class="droite label_class">{LBL_EMAIL} :</td>
+  <td style="width:34%;" class="gauche label_detail">{EMAIL_MERE}</td>
+</tr>
+</table>
+{PAGE_BREAK}
+<div class="entete_div">{LBL_ASSURANCES}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview" style="width:100%">
+<tr>
+  <td style="width:15%;" class="droite label_class">{LBL_ASSURANCES_IA} :</td>
+  <td style="width:35%;" class="gauche label_detail">{ASSURANCE_IA}</td>
+  <td style="width:15%;" class="droite label_class">{LBL_ASSURANCES_RC} :</td>
+  <td style="width:35%;" class="gauche label_detail">{ASSURANCE_RC}</td>
+</tr>
+</table>
+
+<div class="entete_div">{LBL_CONTACTS_PERSONNE}</div>
+<table cellspacing=0 cellpadding=0 class="display2" style="margin-bottom:40px;margin-top:10px;width:100%">
+<tr class="even">
+  <td style="width:10%;" class="gauche" rowspan=2><u>{LBL_CONTACTS_NUMERO}1</u></td>
+  <td style="width:25%;" class="gauche">{LBL_NOM} : <b>{CONTACT_NOM_1}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_CONTACTS_LIEN} : <b>{CONTACT_LIEN_1}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_ADRESSE} : <b>{CONTACT_ADRESSE_1}</b></td>
+</tr>
+<tr class="even">
+  <td style="width:25%;" class="gauche">{LBL_TELEPHONE} : <b>{CONTACT_TEL_1}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_TELEPHONE2} : <b>{CONTACT_TEL2_1}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_PORTABLE} : <b>{CONTACT_PORTABLE_1}</b></td>
+</tr>
+<tr class="odd">
+  <td style="width:10%;" class="gauche" rowspan=2><u>{LBL_CONTACTS_NUMERO}2</u></td>
+  <td style="width:25%;" class="gauche">{LBL_NOM} : <b>{CONTACT_NOM_2}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_CONTACTS_LIEN} : <b>{CONTACT_LIEN_2}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_ADRESSE} : <b>{CONTACT_ADRESSE_2}</b></td>
+</tr>
+<tr class="odd">
+  <td style="width:25%;" class="gauche">{LBL_TELEPHONE} : <b>{CONTACT_TEL_2}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_TELEPHONE2} : <b>{CONTACT_TEL2_2}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_PORTABLE} : <b>{CONTACT_PORTABLE_2}</b></td>
+</tr>
+<tr class="even">
+  <td style="width:10%;" class="gauche" rowspan=2><u>{LBL_CONTACTS_NUMERO}3</u></td>
+  <td style="width:25%;" class="gauche">{LBL_NOM} : <b>{CONTACT_NOM_3}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_CONTACTS_LIEN} : <b>{CONTACT_LIEN_3}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_ADRESSE} : <b>{CONTACT_ADRESSE_3}</b></td>
+</tr>
+<tr class="even">
+  <td style="width:25%;" class="gauche">{LBL_TELEPHONE} : <b>{CONTACT_TEL_3}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_TELEPHONE2} : <b>{CONTACT_TEL2_3}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_PORTABLE} : <b>{CONTACT_PORTABLE_3}</b></td>
+</tr>
+<tr class="odd">
+  <td style="width:10%;" class="gauche" rowspan=2><u>{LBL_CONTACTS_NUMERO}4</u></td>
+  <td style="width:25%;" class="gauche">{LBL_NOM} : <b>{CONTACT_NOM_4}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_CONTACTS_LIEN} : <b>{CONTACT_LIEN_4}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_ADRESSE} : <b>{CONTACT_ADRESSE_4}</b></td>
+</tr>
+<tr class="odd">
+  <td style="width:25%;" class="gauche">{LBL_TELEPHONE} : <b>{CONTACT_TEL_4}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_TELEPHONE2} : <b>{CONTACT_TEL2_4}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_PORTABLE} : <b>{CONTACT_PORTABLE_4}</b></td>
+</tr>
+<tr class="even">
+  <td style="width:10%;" class="gauche" rowspan=2><u>{LBL_CONTACTS_NUMERO}5</u></td>
+  <td style="width:25%;" class="gauche">{LBL_NOM} : <b>{CONTACT_NOM_5}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_CONTACTS_LIEN} : <b>{CONTACT_LIEN_5}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_ADRESSE} : <b>{CONTACT_ADRESSE_5}</b></td>
+</tr>
+<tr class="even">
+  <td style="width:25%;" class="gauche">{LBL_TELEPHONE} : <b>{CONTACT_TEL_5}</b></td>
+  <td style="width:30%;" class="gauche">{LBL_TELEPHONE2} : <b>{CONTACT_TEL2_5}</b></td>
+  <td style="width:35%;" class="gauche">{LBL_PORTABLE} : <b>{CONTACT_PORTABLE_5}</b></td>
+</tr>
+</table>
+{PAGE_BREAK2}
+<div class="entete_div">{LBL_ACCES_GE}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview" style="width:100%">
+<tr>
+  <td style="width:15%;" class="droite label_class">{LBL_IDENTIFIANT} :</td>
+  <td style="width:35%;" class="gauche label_detail">{IDENTIFIANT}</td>
+  <td style="width:15%;" class="droite label_class">{LBL_MDP} :</td>
+  <td style="width:35%;" class="gauche label_detail">{PASSE}</td>
+</tr>
+</table>
+
+<div class="entete_div">{LBL_INFOS_COMPL}</div>
+<table cellspacing=0 cellpadding=0 class="tableau_editview" style="width:100%">
+<tr>
+  <td style="width:15%;vertical-align:top" class="droite label_class">{LBL_INFOS_COMPL2} :</td>
+  <td style="width:85%;vertical-align:top" class="gauche label_detail">{INFOS_COMPL}</td>
+</tr>
+</table>
+<!-- END formulaire -->

@@ -1,0 +1,26 @@
+.defaultSkinSouthstreet td.mceToolbar, .defaultSkinSouthstreet td.mceStatusbar, .defaultSkinSouthstreet .mceMenuItemTitle a {background:#67b021}
+.defaultSkinSouthstreet .mceListBox .mceText {background:#FFF}
+
+.defaultSkinSouthstreet .mceExternalToolbar, 
+.defaultSkinSouthstreet .mceListBox .mceText, 
+.defaultSkinSouthstreet .mceListBox .mceOpen, 
+.defaultSkinSouthstreet div.mceMenu, 
+.defaultSkinSouthstreet table.mceLayout, 
+.defaultSkinSouthstreet .mceMenuItemTitle a, 
+.defaultSkinSouthstreet table.mceLayout tr.mceFirst td, 
+.defaultSkinSouthstreet table.mceLayout, 
+.defaultSkinSouthstreet .mceMenuItemTitle a, 
+.defaultSkinSouthstreet table.mceLayout tr.mceLast td, 
+.defaultSkinSouthstreet .mceIframeContainer, 
+.defaultSkinSouthstreet .mceButton, 
+.defaultSkinSouthstreet .mceSplitButton .mceAction, 
+.defaultSkinSouthstreet .mceSplitButton .mceOpen, 
+.defaultSkinSouthstreet .mceSplitButton a.mceAction, 
+.defaultSkinSouthstreet .mceSplitButton a.mceOpen, 
+.defaultSkinSouthstreet .mceColorSplitMenu .mceMoreColors,
+.defaultSkinSouthstreet .mceSplitButtonEnabled .mceAction, 
+.defaultSkinSouthstreet .mceSplitButtonHover .mceAction, 
+.defaultSkinSouthstreet .mceSplitButtonSelected .mceAction
+{
+	border-color: #459e00;
+}

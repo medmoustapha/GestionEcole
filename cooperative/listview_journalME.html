@@ -1,0 +1,92 @@
+<div class="titre_page">{LBL_JOURNAL3}</div>
+<div class="aide"><button id="aide">{BTN_AIDE}</button></div>
+
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="droite" nowrap>
+    <div class="ui-widget ui-state-default ui-corner-right floatdroite ui-div-listview textcentre">{LBL_SAISIE_VISUEL} : {DOCUMENTS}</div>
+    <div class="ui-widget ui-state-default ui-corner-left floatdroite ui-div-listview textcentre">{LBL_SAISIE_EXERCICE} : {ANNEE_S}</div>
+  </td>
+</tr>
+<tr>
+  <td class="gauche">
+    <button name="ajouter_ticket" id="ajouter_ticket">{BTN_JOURNAL_SAISIR_OPERATION}</button>&nbsp;
+    <button name="transfert_compte" id="transfert_compte">{BTN_JOURNAL_CAISSE_BANQUE}</button>&nbsp;
+    <button name="rapprochement_bancaire" id="rapprochement_bancaire">{BTN_JOURNAL_RAPPROCHEMENT}</button>&nbsp;
+    <button name="repartir_classes" id="repartir_classes">{BTN_JOURNAL_REPARTITION}</button>&nbsp;
+    <button name="bilan_coop" id="bilan_coop">{LBL_BILAN_COMPTABLE}</button>&nbsp;
+    <button name="Rechercher_Liste" id="Rechercher_Liste">{BTN_RECHERCHE_CIBLEE}</button>&nbsp;
+    <button name="imprimer_doc" id="imprimer_doc">{BTN_IMPRIMER}</button>
+  </td>
+</tr>
+</table>
+<div class="ui-widget marge10_bas" id="affiche_recherche_journal" style="visibility:hidden;display:none;"><div class="contour_recherche ui-corner-all">
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+		<div class="titre_recherche">{LBL_RECHERCHE_CIBLEE}</div>
+	</td>
+</tr>
+<tr>
+  <td class="textgauche" width=100%>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_DATE} :</label><label class="label_recherche_champ">{RECHERCHE_DATE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_BANQUE} :</label><label class="label_recherche_champ">{RECHERCHE_BANQUE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_LIBELLE} :</label><label class="label_recherche_champ">{RECHERCHE_LIBELLE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_TIERS} :</label><label class="label_recherche_champ">{RECHERCHE_TIERS}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_LIGNE_COMPTABLE} :</label><label class="label_recherche_champ">{RECHERCHE_LIGNE_COMPTABLE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_CLASSE} :</label><label class="label_recherche_champ">{RECHERCHE_CLASSE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_ENTREE} :</label><label class="label_recherche_champ">{RECHERCHE_CREDIT}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_MODE_PAIEMENT} :</label><label class="label_recherche_champ">{RECHERCHE_MODE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_SAISIE_SORTIE} :</label><label class="label_recherche_champ">{RECHERCHE_DEBIT}</label></div>
+	</td>
+</tr>
+<tr>
+  <td class="textdroite" width=100%>
+		<button tabindex=111 id="vider_journal" name="vider_journal">{BTN_VIDER}</button>&nbsp;<button tabindex=110 id="rechercher_journal" name="rechercher_journal">{BTN_RECHERCHER}</button>
+	</td>
+</tr>
+</table>
+</div></div>
+
+<div id="listview">
+<!-- BEGIN liste_entete -->
+<table id="listing_donnees_journal" class="display" cellpadding=0 cellspacing=0 style="width:100%">
+<thead>
+<tr>
+<th style="width:10%" class="centre">{LBL_SAISIE_DATE}</th>
+<th style="width:36%" class="centre">{LBL_SAISIE_LIBELLE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_LIBELLE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_LIGNE_COMPTABLE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_TIERS}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_CLASSE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_BANQUE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_MODE_PAIEMENT2}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_ENTREE}</th>
+<th style="width:10%" class="centre">{LBL_SAISIE_SORTIE}</th>
+<th style="width:2%" class="centre">{LBL_SAISIE_POINTE}</th>
+<th style="width:2%" class="centre">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<!-- END liste_entete -->
+
+<!-- BEGIN liste -->
+<tr>
+<td style="width:10%" class="centre">{DATE}</td>
+<td style="width:36%" class="gauche"><a title="{SPAN_JOURNAL_VOIR_FICHE}" href="#null" onClick="Coop_Journal_DetailView_Util('{ID}','{TYPE}');">{LIBELLE}</a></td>
+<td style="width:10%" class="centre">{LIBELLE2}</td>
+<td style="width:10%" class="centre">{LIGNE_COMPTABLE}</td>
+<td style="width:10%" class="centre">{TIERS}</td>
+<td style="width:10%" class="centre">{ID_CLASSE}</td>
+<td style="width:10%" class="centre">{BANQUE}</td>
+<td style="width:10%" class="centre">{MODE}</td>
+<td style="width:10%" class="droite">{CREDIT}</td>
+<td style="width:10%" class="droite">{DEBIT}</td>
+<td style="width:2%" class="centre">{POINTE}</td>
+<td style="width:2%" class="centre" nowrap><a title="{SPAN_JOURNAL_VOIR_FICHE}" href="#null" onClick="Coop_Journal_DetailView_Util('{ID}','{TYPE}');"><img src="images/voir.png" width=12 height=12 border=0></a>&nbsp;{EDITER}</td>
+</td>
+</tr>
+<!-- END liste -->
+</tbody>
+</table>
+</div>

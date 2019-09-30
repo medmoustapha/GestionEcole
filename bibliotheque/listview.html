@@ -1,0 +1,87 @@
+<div class="titre_page">{LBL_BIBLIOTHEQUE_TITRE}</div>
+<div class="aide"><button id="aide">{BTN_AIDE}</button></div>
+
+<table cellpadding=0 cellspacing=0 style="width:100%" border=0 class="tableau_bouton">
+<tr>
+  <td class="droite" valign=middle nowrap>
+    {MSG_DROITE}
+  </td>
+</tr>
+<tr>
+  <td class="gauche">
+    <button id="creer-element">{LBL_AJOUTER_LIVRE}</button>&nbsp;
+    <button id="creer-emprunt">{BTN_SAISIR_EMPRUNT}</button>&nbsp;
+		<button id="Rechercher_Liste">{BTN_RECHERCHE_CIBLEE}</button>&nbsp;
+    <button id="imprimer">{BTN_IMPRIMER}</button>
+  </td>
+</tr>
+</table>
+
+<div class="ui-widget" id="affiche_recherche_biblio" style="visibility:hidden;display:none;"><div class="contour_recherche ui-corner-all">
+<table cellpadding=0 cellspacing=0 width=100% border=0>
+<tr>
+  <td class="textgauche" width=100%>
+		<div class="titre_recherche">{LBL_RECHERCHE_CIBLEE}</div>
+	</td>
+</tr>
+<tr>
+  <td class="textgauche" width=100%>
+			<div class="recherche"><label class="label_recherche">{LBL_BIBLIOTHEQUE} :</label><label class="label_recherche_champ">{RECHERCHE_BIBLIOTHEQUE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_EDITEUR} :</label><label class="label_recherche_champ">{RECHERCHE_EDITEUR}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_CATEGORIE} :</label><label class="label_recherche_champ">{RECHERCHE_CATEGORIE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_COLLECTION} :</label><label class="label_recherche_champ">{RECHERCHE_COLLECTION}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_REFERENCE} :</label><label class="label_recherche_champ">{RECHERCHE_REFERENCE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_EMPRUNT_EMPRUNTEUR} :</label><label class="label_recherche_champ">{RECHERCHE_EMPRUNTEUR}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_TITRE} :</label><label class="label_recherche_champ">{RECHERCHE_TITRE}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_ISBN} :</label><label class="label_recherche_champ">{RECHERCHE_ISBN}</label></div>
+			<div class="recherche"><label class="label_recherche">{LBL_AUTEUR} :</label><label class="label_recherche_champ">{RECHERCHE_AUTEUR}</label></div>
+			<div class="recherche"><label class="label_recherche">{LST_ETAT} :</label><label class="label_recherche_champ">{RECHERCHE_ETAT}</label></div>
+	</td>
+</tr>
+<tr>
+  <td class="textdroite" width=100%>
+		<button tabindex=112 id="vider_biblio" name="vider_biblio">{BTN_VIDER}</button>&nbsp;<button tabindex=111 id="rechercher_biblio" name="rechercher_biblio">{BTN_RECHERCHER}</button>
+	</td>
+</tr>
+</table>
+</div></div>
+
+<div id="listview">
+<!-- BEGIN liste_entete -->
+<table id="listing_donnees_biblio" class="display" cellpadding=0 cellspacing=0  style="width:100%">
+<thead>
+<tr>
+<th class="centre">{LBL_BIBLIOTHEQUE}</th>
+<th class="gauche">{LBL_CATEGORIE}</th>
+<th style="width:10%" class="centre">{LBL_REFERENCE}</th>
+<th style="width:48%" class="centre">{LBL_TITRE}</th>
+<th style="width:20%" class="centre">{LBL_AUTEUR}</th>
+<th style="width:15%" class="centre">{LST_EDITEUR}</th>
+<th style="width:15%" class="centre">{LST_COLLECTION}</th>
+<th style="width:20%" class="centre">{LBL_EMPRUNT_EMPRUNTEUR}</th>
+<th style="width:10%" class="centre">{LST_ISBN}</th>
+<th style="width:10%" class="centre">{LST_ETAT}</th>
+<th class="centre" style="width:2%">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<!-- END liste_entete -->
+
+<!-- BEGIN liste -->
+<tr {SORTI}>
+<td class="centre"><strong>{BIBLIO}</strong></td>
+<td class="gauche"><strong>{ID_CAT}</strong></td>
+<td style="width:10%" class="centre"><a title="{LBL_VOIR_FICHE_LIVRE}" href="#null" onClick="Biblio_L_DetailView_Util('{ID}');">{REFERENCE}</a></td>
+<td style="width:48%" class="gauche"><a title="{LBL_VOIR_FICHE_LIVRE}" href="#null" onClick="Biblio_L_DetailView_Util('{ID}');">{TITRE}</a></td>
+<td style="width:20%" class="gauche">{AUTEUR}</td>
+<td style="width:15%" class="gauche">{EDITEUR}</td>
+<td style="width:15%" class="gauche">{COLLECTION}</td>
+<td style="width:20%" class="centre">{EMPRUNTEUR}</td>
+<td style="width:10%" class="centre">{ISBN}</td>
+<td style="width:10%" class="centre">{ETAT}</td>
+<td style="width:2%" class="centre" nowrap><a title="{LBL_VOIR_FICHE_LIVRE}" href="#null" onClick="Biblio_L_DetailView_Util('{ID}');"><img src="images/voir.png" width=12 height=12 border=0></a>{MODIFIER}</td>
+</tr>
+<!-- END liste -->
+</tbody>
+</table>
+</div>

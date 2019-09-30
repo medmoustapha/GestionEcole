@@ -1,0 +1,215 @@
+p, div, form, span
+{
+  padding:0px;
+  margin:0px;
+}
+
+.titre_page
+{
+  float:left;
+  padding-bottom:10px;
+}
+
+.aide
+{
+  text-align:right;
+  float:right;
+}
+
+.aide2
+{
+  text-align:right;
+}
+
+.floatdroite { float:right; }
+.floatgauche { float:left; }
+
+.marge5_tout { padding:5px; }
+.marge10_tout { padding:10px; }
+.marge5_droite { padding-right:5px; }
+.marge10_droite { padding-right:10px; }
+.marge5_gauche{ padding-left:5px; }
+.marge10_gauche { padding-left:10px; }
+.marge15_gauche { padding-left:15px; }
+.marge40_gauche { padding-left:40px; }
+.marge50_gauche { padding-left:50px; }
+.marge60_gauche { padding-left:60px; }
+.marge5_haut { padding-top:5px; }
+.marge10_haut { padding-top:10px; }
+.marge5_bas { padding-bottom:5px; }
+.marge10_bas { padding-bottom:10px; }
+.marge_rien { padding:0px; }
+.marge_rien_haut { padding-top:0px; }
+.marge_rien_bas { padding-bottom:0px; }
+.marge_rien_gauche { padding-left:0px; }
+.marge_rien_droite { padding-right:0px; }
+
+.margin5_tout { margin:5px; }
+.margin10_tout { margin:10px; }
+.margin5_droite { margin-right:5px; }
+.margin10_droite { margin-right:10px; }
+.margin5_gauche{ margin-left:5px; }
+.margin10_gauche { margin-left:10px; }
+.margin5_haut { margin-top:5px; }
+.margin10_haut { margin-top:10px; }
+.margin5_bas { margin-bottom:5px; }
+.margin10_bas { margin-bottom:10px; }
+.margin_rien { margin:0px; }
+.margin_rien_haut { margin-top:0px; }
+.margin_rien_bas { margin-bottom:0px; }
+.margin_rien_gauche { margin-left:0px; }
+.margin_rien_droite { margin-right:0px; }
+
+.textcentre  { text-align:center; }
+.textgauche  { text-align:left; }
+.textdroite  { text-align:right !important; }
+
+.font10 { font-size:10px; }
+.font12 { font-size:12px; }
+.font14 { font-size:14px; }
+.font16 { font-size:16px; }
+.font18 { font-size:18px; }
+
+.ui-button { margin-top:5px; margin-bottom:5px; }
+
+.ui-div-separation { float:none;padding:10px;text-align:left;margin-bottom:7px }
+.ui-div-separation-form { float:none;padding:7px;text-align:left;margin-bottom:7px }
+.ui-div-separation-form2 { float:none;padding:3px;text-align:left;margin-bottom:7px }
+.ui-div-listview { padding:4px;padding-left:10px;padding-right:10px;height:25px; }
+
+.ui-div-separation-haut { margin-top:30px; }
+
+.label_class { padding-right:5px;text-align:right;float:right;width:150px;padding-top:3px; }
+.label_class2 { padding-right:5px;text-align:right;float:right;width:250px;padding-top:3px; }
+
+.label_recherche { text-align:right;float:left;width:150px;vertical-align:middle;padding-right:3px;padding-top:3px; }
+.label_recherche_champ { text-align:left;float:left;vertical-align:middle;padding-left:3px }
+.recherche { float:left;width:50% !important; height:30px; }
+
+.petit { padding-top:5px; font-size:10px; }
+
+.label_detail_non_gras { text-align:left;float:left;padding-top:3px;font-weight:normal; }
+
+.label_detail { text-align:left;float:left;padding-top:3px;font-weight:bold; }
+.label_rien { padding-top:3px; }
+
+.label_listview { text-align:center;padding-top:3px;font-weight:normal; }
+
+.text { padding:3px; font-family:Arial, sans serif; font-size:12px; color:#000000; font-weight:normal; }
+
+.tableau_bouton { padding:0; margin:0; border:0; width:100%; margin-top:10px;margin-bottom:5px; }
+.tableau_bouton_bas { padding:0; margin:0; border:0; width:100%; margin-top:5px;margin-bottom:5px; }
+.tableau_bouton td.gauche, .tableau_bouton_bas td.gauche { text-align:left; }
+.tableau_bouton td.droite, .tableau_bouton_bas td.droite { text-align:right; }
+
+.tableau_editview { padding:0; margin:0; border:0; width:100%; margin-bottom:30px; }
+.tableau_editview td.gauche { padding-top:10px; padding-bottom:10px; text-align:left; }
+.tableau_editview td.droite { padding-top:10px; padding-bottom:10px; text-align:right; }
+.tableau_editview td.centre { padding-top:10px; padding-bottom:10px; text-align:center; }
+.tableau_editview2 { padding:0; margin:0; border:0; width:100%; }
+.tableau_editview2 td.gauche { padding-top:10px; padding-bottom:10px; text-align:left; }
+.tableau_editview2 td.droite { padding-top:10px; padding-bottom:10px; text-align:right; }
+.tableau_editview2 td.centre { padding-top:10px; padding-bottom:10px; text-align:center; }
+.tableau_editview2 td.rien { padding-top:10px; padding-bottom:10px; }
+.sorti td, .sorti td a, td.sorti { background:#C0C0C0 !important; color:#808080 }
+.livreasortir td, .livreasortir td a, td.livreasortir { color:#FF0000 !important }
+.livresorti td, .livresorti td a, td.livresorti { color:#808080 !important; text-decoration:line-through; }
+
+.input_disabled { background:#C0C0C0 !important; }
+
+.message_chargement { font-family:Arial, sans serif; font-size:12px;position:absolute; color:#008000; text-align:center; width:350px; background:#CEFFCE; border:1px solid #008000; padding:10px; top:15px; }
+
+.explic { line-height:24px; }
+
+.option_gras { font-weight:bold; }
+.option_gris { background:#c0c0c0; }
+
+.portlet { margin: 0; margin-bottom:10px; }
+.portlet-header { margin: 2px; padding: 10px; }
+.portlet-header .ui-icon { float: right; }
+.portlet-content { padding: 2px; }
+.ui-sortable-placeholder { border: 1px dotted #C0C0C0; visibility: visible !important; height: 50px !important; }
+.ui-sortable-placeholder * { visibility: hidden; }
+
+table.display th.gauche,
+table.display tr.even td.gauche,
+table.display tr.odd td.gauche
+{
+  text-align:left;
+}
+table.display th.droite,
+table.display tr.even td.droite,
+table.display tr.odd td.droite
+{
+  text-align:right;
+}
+table.display th.centre,
+table.display tr.even td.centre,
+table.display tr.odd td.centre
+{
+  text-align:center;
+}
+
+table.heures tbody tr td.pas_haut
+{
+  border-top:0px;
+}
+
+.ligne1 {
+	background-color: #E2E4FF;
+	padding:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.ligne2 {
+	background-color: #F7F7FF;
+	padding:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.colorSelector {
+	position: relative;
+	width: 36px;
+	height: 36px;
+	background: url(../images/colorpicker/select2.png);
+}
+
+.colorSelector div {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/colorpicker/select2.png) center;
+}
+
+input.ui-button { padding: .55em 1em; }
+
+.contour_recherche
+{
+	padding: 10px;
+	border:1px solid #FF8000;
+	background-color:#FFE4CA;
+}
+
+.titre_recherche 
+{ 
+  height:30px;
+  font-size:18px;
+  color:#FF8000;
+  font-weight:bold;
+  font-family:Arial, sans serif;
+  font-variant:small-caps;
+}
+
+.absence_non_justifiee
+{
+  background-color:#FF0000;
+}
+
+.absence_justifiee
+{
+  background-color:#00FF00;
+}

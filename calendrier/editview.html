@@ -1,0 +1,59 @@
+<!-- BEGIN formulaire -->
+<a name="haut_formulaire"></a>
+<form action="index2.php" method=POST id=form_editview name=Detail>
+<input type="hidden" id="module" name="module" value="calendrier">
+<input type="hidden" id="action" name="action" value="save_infos">
+<input type="hidden" id="id" name="id" value="{ID}">
+<input type="hidden" id="id_saisie" name="id_saisie" value="{ID_SAISIE}">
+<div id="msg_ok"></div>
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton">
+<tr>
+  <td class="gauche">
+    <input tabIndex=12 type="Submit" id="Enregistrer" name="Enrigistrer" value="{BTN_ENREGISTRER}">&nbsp;
+    <input tabIndex=13 type="Button" id="EnregistrerFermer" name="EnrigistrerFermer" value="{BTN_ENREGISTRER_FERMER}">
+    <input tabIndex=14 type="Button" id="EnregistrerNouveau" name="EnregistrerNouveau" value="{BTN_ENREGISTRER_CREER_RDV}">
+    <input tabIndex=15 type="Button" id="Annuler" name="Annuler" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="tableau_editview2">
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_RESUME} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=85% colspan=3>{RESUME}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_DATE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{DATE}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_HEURE_DEBUT} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{HEURE_DEBUT}</td>
+</tr>
+<tr>
+  <td class="droite" width=15%><label class="label_class">{LBL_TYPE} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{TYPE}</td>
+  <td class="droite" width=15%><label class="label_class">{LBL_HEURE_FIN} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=35%>{HEURE_FIN}</td>
+</tr>
+<tr>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_PERSONNES_CONCERNEES} <font color="#FF0000">*</font> :</label></td>
+  <td class="gauche" width=85% colspan=3>{ID_UTIL}</td>
+</tr>
+<tr>
+  <td class="droite" width=15% valign=top><label class="label_class">{LBL_DETAILS} :</label></td>
+  <td class="gauche" width=85% colspan=3>{DETAIL}</td>
+</tr>
+</table>
+
+<table cellpadding=0 cellspacing=0 width=100% border=0 class="tableau_bouton_bas">
+<tr>
+  <td class="gauche">
+    <input tabIndex=8 type="Button" id="Enregistrer2" name="Enrigistrer2" value="{BTN_ENREGISTRER}">&nbsp;
+    <input tabIndex=9 type="Button" id="EnregistrerFermer2" name="EnrigistrerFermer2" value="{BTN_ENREGISTRER_FERMER}">
+    <input tabIndex=10 type="Button" id="EnregistrerNouveau2" name="EnregistrerNouveau2" value="{BTN_ENREGISTRER_CREER_RDV}">
+    <input tabIndex=11 type="Button" id="Annuler2" name="Annuler2" value="{BTN_ANNULER}">
+  </td>
+  <td class="droite" valign=middle><font color="#FF0000">*</font> : {LBL_CHAMP_OBLIGATOIRE}</td>
+</tr>
+</table>
+</form>
+<!-- END formulaire -->
